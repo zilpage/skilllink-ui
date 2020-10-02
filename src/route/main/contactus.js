@@ -74,7 +74,7 @@ function App() {
                                 <div className="row">
                                     <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                                         <div className="info-item">
-                                            <h2>25 North Street,Dubai</h2>
+                                            <h2>3O Bromley, Cadogan Estate,Lagos State</h2>
                                             <div className="info-wrap">
                                                 <div className="info-icon"><i className="ti-world" /></div>
                                                 <div className="info-text"><span>Office Address</span></div>
@@ -83,7 +83,7 @@ function App() {
                                     </div>
                                     <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                                         <div className="info-item">
-                                            <h2>info@nasarna.com</h2>
+                                            <h2>info@skilllink.org</h2>
                                             <div className="info-wrap">
                                                 <div className="info-icon-2"><i className="fi flaticon-envelope" /></div>
                                                 <div className="info-text"><span>Official Mail</span></div>
@@ -92,7 +92,7 @@ function App() {
                                     </div>
                                     <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                                         <div className="info-item">
-                                            <h2>+91 256-987-239</h2>
+                                            <h2>234-703 4000 056</h2>
                                             <div className="info-wrap">
                                                 <div className="info-icon-3"><i className="ti-headphone-alt" /></div>
                                                 <div className="info-text"><span>Official Phone</span></div>

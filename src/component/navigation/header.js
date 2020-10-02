@@ -24,6 +24,7 @@ class App extends Component {
     }
 
     render() {
+        console.log(this.props.location.pathname);
         return (
             <div className="middle-header header-style-3">
                 {/* <div className="topbar">
@@ -70,23 +71,23 @@ class App extends Component {
 
 
                                         <li>
-                                            <Link to="/" className="active">
+                                            <Link to="/" className={this.props.location.pathname === "/"? "active": "inactive"}>
                                                 Home
                                         </Link>
 
                                         </li>
                                         <li>
-                                            <Link to="/about" className="actives">
+                                            <Link to="/about" className={this.props.location.pathname === "/about"? "active": "inactive"}>
                                                 About Us
                                         </Link>
                                         </li>
                                         <li>
-                                            <Link to="/contact" className="actives">
+                                            <Link to="/contact" className={this.props.location.pathname === "/contact"? "active": "inactive"}>
                                                 Contact
                                         </Link>
                                         </li>
                                         <li>
-                                            <Link to="/campaign/list" className="actives">
+                                            <Link to="/campaign/list" className={this.props.location.pathname === "/campaign/list"? "active": "inactive"} >
                                                 Campaign
                                         </Link>
                                         </li>
@@ -98,7 +99,7 @@ class App extends Component {
                                         </li>}
 
                                         {AuthenticationService.getToken() && <li>
-                                            <Link to="/dashboard" className="actives">
+                                            <Link to="/dashboard" className={this.props.location.pathname === "/dashboard"? "active": "inactive"}>
                                                 Dashboard
                                         </Link>
                                         </li>}
