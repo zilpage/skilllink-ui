@@ -1,0 +1,148 @@
+import React, { Component } from 'react';
+
+import { Link } from 'react-router-dom'
+
+import { withRouter } from 'react-router'; 
+import AuthenticationService from './../../service/authentication_service'
+
+
+import logo from  './../../skilllink.jpeg'
+
+class App extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            result: null,
+        }
+    }
+
+    logout = () =>{
+        AuthenticationService.clearLocalstorage();
+        this.props.history.push('/')
+    }
+
+    render() {
+        return (
+            <div className="middle-header header-style-3">
+                {/* <div className="topbar">
+                <div className="container">
+                    <div className="row">
+                        <div className="col col-md-6 col-sm-12 col-12">
+                            <div className="contact-intro">
+                                <ul>
+                                    <li><i className="fi flaticon-call" />+000123456789</li>
+                                    <li><i className="fi flaticon-envelope" /> nasarna@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="col col-md-6 col-sm-12 col-12">
+                            <div className="contact-info">
+                                <ul>
+                                    <li><a href="/login">Login</a></li>
+                                    <li><a href="/signup">Sign Up</a></li>
+                                    <li><a className="theme-btn" href="/donate">Donate Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> */}
+                <div className="container">
+                    <div className="header-content">
+                        <div className="row">
+                            <div className="col-lg-3 col-md-4 col-sm-4 col-4">
+                                <div className="logo"><a title ><img src={logo} alt="" style={{maxHeight: '80px'}} /></a></div>
+                            </div>
+                            <div className="col-lg-8 d-lg-block d-none">
+                                <nav>
+                                    <ul>
+                                        {/* <li>
+                                        <a className="active" onClick={() => history.push(`/`)} >Home</a>
+                                    </li>
+                                    <li>
+                                        <a className="f" onClick={() => history.push(`/about`)} >About</a>
+                                    </li>
+                                    <li>
+                                        <a className="s" onClick={() => history.push(`/contact`)} >Contact</a>
+                                    </li> */}
+
+
+                                        <li>
+                                            <Link to="/" className="active">
+                                                Home
+                                        </Link>
+
+                                        </li>
+                                        <li>
+                                            <Link to="/about" className="actives">
+                                                About Us
+                                        </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/contact" className="actives">
+                                                Contact
+                                        </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/campaign/list" className="actives">
+                                                Campaign
+                                        </Link>
+                                        </li>
+
+                                        {!AuthenticationService.getToken() && <li>
+                                            <Link to="/login" className="actives">
+                                                Login
+                                        </Link>
+                                        </li>}
+
+                                        {AuthenticationService.getToken() && <li>
+                                            <Link to="/dashboard" className="actives">
+                                                Dashboard
+                                        </Link>
+                                        </li>}
+                                        {AuthenticationService.getToken() && <li>
+                                            <a onClick={() => this.logout()} className="actives">
+                                                Logout
+                                        </a>
+                                        </li>}
+
+                                    </ul>
+                                </nav>
+                            </div>
+
+                            <div className="col-md-2 col-sm-2 col-2">
+                                <div>
+                                    <div className="mobileMenu ">
+                                        <ul className="responsivemenu">
+                                            <li>
+                                                <p>Home<i className="fa fa-angle-right" aria-hidden="true" /></p>
+                                                <div className="collapse" aria-expanded="false">
+                                                    <div className="card">
+                                                        <div className="card-body">
+                                                            <ul>
+                                                                <li><a className="active" href="/home">Home style 1</a></li>
+                                                                <li><a className="active" href="/home2">Home style 2</a></li>
+                                                                <li><a className="active" href="/home3">Home style 3</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li><a href="/about">About</a></li>
+                                            <li><a href="/contact">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                    <div className="showmenu"><i className="fa fa-bars" aria-hidden="true" /></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="clearfix" /></div>
+                </div>
+            </div>
+        )
+    };
+}
+
+export default withRouter(App);
