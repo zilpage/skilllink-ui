@@ -26,7 +26,7 @@ function App({ history }) {
                         <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
                             <div className="widget about-widget">
                                 <div className="logo widget-title"><img src="/static/media/logo-2.c1ceef2e.png" alt="" /></div>
-                                <p>Build and Earn with your online store with lots of cool and exclusive wpo-features </p>
+                                <p>Building a self sufficient future for young girls. </p>
                                 <ul>
                                     <li><a href="/home"><i className="ti-facebook" /></a></li>
                                     <li><a href="/home"><i className="ti-twitter-alt" /></a></li>

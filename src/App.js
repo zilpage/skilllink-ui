@@ -10,6 +10,7 @@ import Signup from './route/auth/signup'
 import CampaignList from './route/admin/campaign_list'
 import CampaignDetail from './route/admin/campaign_detail';
 import Dashboard from './route/admin/dashboard'
+import Donation from './route/main/donation'
 import './App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/campaign/list" exact component={CampaignList} />
           <Route path="/campaign/detail" exact component={CampaignDetail} />
           <Route path="/dashboard" exact component={Dashboard} />
+          <Route path="/donate" exact component={Donation} />
         </Switch>
       </div>
     </Router>

@@ -6,7 +6,7 @@ import { withRouter } from 'react-router';
 import AuthenticationService from './../../service/authentication_service'
 
 
-import logo from  './../../skilllink.jpeg'
+import logo from  './../../SkillLink.png'
 
 class App extends Component {
 

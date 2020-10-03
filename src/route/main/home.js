@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom'
 
 import Navigation from './../../component/navigation/header';
 import Footer from './../../component/navigation/footer';
@@ -23,18 +24,18 @@ function App() {
                       <p>You Can Satisfied Yourself By Helping.</p>
                     </div>
                     <div className="btns">
-                      <a className="theme-btn" href="/donate">Donate Now</a>
+                      <Link className="theme-btn" to="/campaign/list">Donate Now</Link>
                       <ul>
                         <li className="video-holder">
                           <div>
                             <div className="video-btn">
-                              <ul>
+                              {/* <ul>
                                 <li><button className="wrap"><i className="fi flaticon-play-button-2" aria-hidden="true" /></button></li>
-                              </ul>
+                              </ul> */}
                             </div>
                           </div>
                         </li>
-                        <li className="video-text">Watch Our Video</li>
+                        {/* <li className="video-text">Watch Our Video</li> */}
                       </ul>
                     </div>
                   </div>
@@ -433,7 +434,7 @@ function App() {
             </div>
           </div>
         </div> */}
-        <div className="wpo-world-area undefined">
+        {/* <div className="wpo-world-area undefined">
           <div className="container">
             <div className="row">
               <div className="col-12">
@@ -444,15 +445,18 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="wpo-cta-area undefined">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
                 <div className="wpo-cta-text">
                   <h2>You Can Help The Poor With Us</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse </p>
-                  <div className="btns"><a className="theme-btn" href="/donate">Donate Now</a><a className="theme-btn-s2" href="/home">Join Us Now</a></div>
+                  {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse </p> */}
+                  <div className="btns">
+                    <Link className="theme-btn" to="/campaign/list">Donate Now</Link>
+                    {/* <a className="theme-btn-s2" href="/home">Join Us Now</a> */}
+                  </div>
                 </div>
               </div>
             </div>

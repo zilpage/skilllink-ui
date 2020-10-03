@@ -40,6 +40,16 @@ class AppService {
         return request.get(options);
     }
 
+    static getPublicCampaigns () {
+        let options = Object();
+        options.url = UrlService.API_BASE_PATH + UrlService.GET_PUBLIC_CAMPAIGNS;
+        options.params = null;
+        options.authenticated = false;      
+        return request.get(options);
+    }
+
+    
+
 
     static activateCampaign (param) {
         let options = Object();
@@ -52,7 +62,22 @@ class AppService {
 
     
 
+    
+    static donate (params) {
+        let options = Object();
+        options.url = UrlService.API_BASE_PATH + UrlService.CONTRIBUTION;
+        options.params = params;
+        options.authenticated = true;      
+        return request.post(options);
+    }
 
+    static getDonations () {
+        let options = Object();
+        options.url = UrlService.API_BASE_PATH + UrlService.GET_CONTRIBUTIONS;
+        options.params = null;
+        options.authenticated = true;      
+        return request.get(options);
+    }
     
     
     

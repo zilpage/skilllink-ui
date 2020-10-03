@@ -5,6 +5,7 @@ import Navigation from './../../component/navigation/header';
 import Footer from './../../component/navigation/footer';
 
 import AppService from './../../service/app_service'
+import AuthenticationService from './../../service/authentication_service'
 
 class App extends Component {
 
@@ -36,7 +37,7 @@ class App extends Component {
                         alert(response.description)
                         this.setState({ errors: response.errors, loading: false })
                     } else {
-                        this.setState({  loading: false, result: null })
+                        this.setState({ loading: false, result: null })
                         this.getCampaigns();
                     }
                 })
@@ -44,7 +45,7 @@ class App extends Component {
     }
 
     getCampaigns = () => {
-        AppService.getCampaigns().then(response => {
+        AppService.getPublicCampaigns().then(response => {
             this.setState({ loadingMessage: null, loading: false },
                 () => {
                     console.log(response);
@@ -68,7 +69,7 @@ class App extends Component {
                         alert(response.description)
                         this.setState({ errors: response.errors, loading: false })
                     } else {
-                        this.setState({  loading: false, result: null })
+                        this.setState({ loading: false, result: null })
                         this.getCampaigns();
                     }
                 })
@@ -76,11 +77,11 @@ class App extends Component {
     }
 
 
-    
+
 
 
     render() {
-        const {result} = this.state;
+        const { result } = this.state;
         return (
             <div className="App" id="scrool">
                 <div className="App">
@@ -111,7 +112,7 @@ class App extends Component {
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-12">
+                                {AuthenticationService.getToken() && <div className="col-12">
                                     <div style={{ width: '60%', marginLeft: '20%', marginBottom: '50px' }}>
                                         <div className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3">
                                             <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12">
@@ -208,7 +209,7 @@ class App extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>}
                                 {
                                     result && result.list && result.list.length > 0 && result.list.map((item, i) => {
                                         return <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid">
@@ -217,16 +218,19 @@ class App extends Component {
                                                     <img src="/static/media/img-1.77053a87.jpg" alt="" />
                                                     <div className="thumb-text"><span>25</span><span>NOV</span></div>
                                                 </div>
-                                                <div className="wpo-event-text">
+                                                <div className="wpo-event-text slide-caption">
                                                     <h2>{item.title}</h2>
                                                     <ul>
                                                         <li><i className="fa fa-clock-ow" aria-hidden="true" />Goal</li>
                                                         <li><i className="fi flaticon-pinsw" />N{item.goal.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}</li>
-                                                        
+
                                                     </ul>
                                                     <p>{item.story}</p>
                                                     {!item.enabled && <button className="MuiButtonBase-root MuiButton-root MuiButton-text cBtn cBtnLarge cBtnTheme MuiButton-fullWidth" onClick={() => this.activateCampaign(item, true)} tabIndex={0} ><span className="MuiButton-label">Activate</span><span className="MuiTouchRipple-root" /></button>}
                                                     <Link to="/campaign/detail">Learn More...</Link>
+                                                    <div className="btns" >
+                                                        <Link className="theme-btn" to="/donate" style={{color: 'white'}} >Donate Now</Link>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

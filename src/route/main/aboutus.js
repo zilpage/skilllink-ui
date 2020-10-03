@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom'
 import Navigation from './../../component/navigation/header';
 import Footer from './../../component/navigation/footer';
 
@@ -83,7 +84,7 @@ function App() {
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -97,23 +98,56 @@ function App() {
                                     <span>What We Do?</span>
                                     <h2>We Are In A Mission To Help The Helpless</h2>
                                 </div>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there.</p>
-                                <p>Thing embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, </p>
+                                <p>The overall goal of the Skill Link platform and programs is to empower the less privileged Lagos schoolgirl to take control of her future. We have itemized below what success will look like for participants on the Skill Link platform:
+                                <li>High completion rate of Skill Link programs by trainees, not less than 80%.</li>
+                                <li>High completion rate of secondary school education by trainees, not less than 80%.</li>
+                                <li>Increased rate of higher education enrollment among trainees.</li>
+                                <li>Increased employability of trainees.</li>
+                                <li>Improved financial inclusion and literacy among trainees.</li>
+                                <li>Increased brand awareness and goodwill for sponsors.</li>  </p>
                                 <div className="btns">
-                                    <a href="/donate" className="theme-btn">Donate Now</a>
+                                    <Link to="/campaign/list" className="theme-btn">Donate Now</Link>
                                     <ul>
                                         <li className="video-holder">
                                             <div>
                                                 <div className="video-btn">
                                                     <ul>
-                                                        <li><button className="wrap"><i className="fi flaticon-play-button-2" aria-hidden="true" /></button></li>
+                                                        {/* <li><button className="wrap"><i className="fi flaticon-play-button-2" aria-hidden="true" /></button></li> */}
                                                     </ul>
                                                 </div>
                                             </div>
                                         </li>
-                                        <li className="video-text">Watch Our Video</li>
+                                        {/* <li className="video-text">Watch Our Video</li> */}
                                     </ul>
                                 </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div className="col-lg-6 col-md-12 colsm-12">
+                            <div className="wpo-about-text">
+                                <div className="wpo-section-title">
+                                    <span>Funding</span>
+                                    <h2>Skill Link projects are funded through the following sources:</h2>
+                                </div>
+                                <p>
+
+                                    <li>
+                                        Fundraising activities, mostly income generated from:<br />
+                                        <ul>
+                                            <li>The Jade Preteens Boot Camp: a two-week intensive personal discovery training for children aged 9 to 12. </li>
+                                            <li>Keeping Girls Safe Events: focused on helping institutions deal with risks related to Human Trafficking and other predicate offences to money laundering that target girls. </li>
+                                        </ul>
+
+                                    </li>
+                                    
+                                     
+                                    <li>Sponsorships from corporate organizations as part of CSR, sustainability programs and building reputational reservoir.</li>
+                                    <li>Donations from well-meaning individuals as part of their contributions to human development. </li>
+                                </p>
+                                
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 colsm-12">

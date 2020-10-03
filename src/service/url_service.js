@@ -9,7 +9,10 @@ const UrlService =  {
     SIGN_UP: "/users/create",
     CREATE_CAMPAIGN: "/campaign",
     GET_CAMPAIGNS: "/campaigns",
+    GET_PUBLIC_CAMPAIGNS: "/public/campaigns",
     ACTIVATE_CAMPAIGN: "/activate/campaign",
+    CONTRIBUTION: "/contribution",
+    GET_CONTRIBUTIONS: "/public/contributions",
 
 
 };
