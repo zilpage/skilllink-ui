@@ -6,6 +6,7 @@ import Footer from './../../component/navigation/footer';
 
 import AppService from './../../service/app_service'
 import AuthenticationService from './../../service/authentication_service'
+import UrlService from './../../service/url_service';
 
 class App extends Component {
 
@@ -20,6 +21,34 @@ class App extends Component {
     componentDidMount() {
         this.getCampaigns();
 
+    }
+
+    uploadonly = (e) => {
+        let file = null;
+        if (e.target.files.length) {
+            const arrFiles = Array.from(e.target.files)
+            const files = arrFiles.map((file, index) => {
+              const src = window.URL.createObjectURL(file)
+              return { file, id: index, src }
+            })
+            file = files[0].file;
+        }
+        console.log(file);
+        this.setState({ loading: true })
+        let data = {
+            upload: file
+        }
+        AppService.uploadonly(data)
+            .then(response => {
+                // console.log(data);
+                this.setState({ loading: false })
+                if (response.code) {
+                    alert(response.description)
+                } else {
+                    this.setState({ coverImage: response.description })
+                    alert('file upload successful')
+                }
+            })
     }
 
     handleChange = (e) => {
@@ -141,7 +170,14 @@ class App extends Component {
                                                 <div className="MuiFormControl-root MuiTextField-root inputOutline MuiFormControl-fullWidth">
                                                     <label className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined" data-shrink="true">Cover Photo</label>
                                                     <div className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl">
-                                                        <input aria-invalid="false" name="coverPhoto" onChange={this.handleChange} placeholder="Cover photo" type="text" className="MuiInputBase-input MuiOutlinedInput-input" />
+                                                    <img src={UrlService.FILE_BASE_PATH+this.state.coverImage} alt="" style={{maxHeight: "60px"}} />
+                                                        <input aria-invalid="false" name="coverPhoto" type="file" accept="image/*"
+                                                            onInput={(event) => {
+                                                                this.uploadonly(event)
+                                                            }}
+                                                            onClick={(event) => {
+                                                                event.target.value = null
+                                                            }} placeholder="Cover photo" className="MuiInputBase-input MuiOutlinedInput-input" />
                                                         <fieldset aria-hidden="true" className="jss1 MuiOutlinedInput-notchedOutline">
                                                             <legend className="jss3 jss4"><span>Cover Photo</span></legend>
                                                         </fieldset>
@@ -212,10 +248,10 @@ class App extends Component {
                                 </div>}
                                 {
                                     result && result.list && result.list.length > 0 && result.list.map((item, i) => {
-                                        return <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid">
+                                        return <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid" key={i}>
                                             <div className="wpo-event-item">
                                                 <div className="wpo-event-img">
-                                                    <img src="/static/media/img-1.77053a87.jpg" alt="" />
+                                                    <img src={UrlService.FILE_BASE_PATH+item.coverImage} alt="" />
                                                     <div className="thumb-text"><span>25</span><span>NOV</span></div>
                                                 </div>
                                                 <div className="wpo-event-text slide-caption">
@@ -229,7 +265,7 @@ class App extends Component {
                                                     {!item.enabled && <button className="MuiButtonBase-root MuiButton-root MuiButton-text cBtn cBtnLarge cBtnTheme MuiButton-fullWidth" onClick={() => this.activateCampaign(item, true)} tabIndex={0} ><span className="MuiButton-label">Activate</span><span className="MuiTouchRipple-root" /></button>}
                                                     <Link to="/campaign/detail">Learn More...</Link>
                                                     <div className="btns" >
-                                                        <Link className="theme-btn" to="/donate" style={{color: 'white'}} >Donate Now</Link>
+                                                        <Link className="theme-btn" to="/donate" style={{ color: 'white' }} >Donate Now</Link>
                                                     </div>
                                                 </div>
                                             </div>

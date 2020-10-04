@@ -79,7 +79,18 @@ class AppService {
         return request.get(options);
     }
     
-    
+    static uploadonly (params) {        
+        const formData = new FormData();
+        formData.append('file', params.upload);
+
+        let options = Object();
+        options.url = UrlService.API_BASE_PATH + UrlService.FILE_UPLOAD;
+        options.formData = true;
+        options.params = formData;  
+        options.authenticated = true;
+
+        return request.post(options);
+    }
     
 }
 
