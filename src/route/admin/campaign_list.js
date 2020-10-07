@@ -273,23 +273,7 @@ class App extends Component {
                                         </div>
                                     })
                                 }
-                                <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid">
-                                    <div className="wpo-event-item">
-                                        <div className="wpo-event-img">
-                                            <img src="/static/media/img-1.77053a87.jpg" alt="" />
-                                            <div className="thumb-text"><span>25</span><span>NOV</span></div>
-                                        </div>
-                                        <div className="wpo-event-text">
-                                            <h2>Education for All Children</h2>
-                                            <ul>
-                                                <li><i className="fa fa-clock-ow" aria-hidden="true" />Goal</li>
-                                                <li><i className="fi flaticon-pinsw" />N450,000</li>
-                                            </ul>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                            <Link to="/campaign/detail">Learn More...</Link>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
