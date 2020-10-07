@@ -36,6 +36,9 @@ class App extends Component {
                     } else {
                         this.setState({ banks: response, loading: false, })
                         AuthenticationService.setSession(response.AccessToken, response.Id, response.Name);
+                        if(response.Role && response.Role.name === "SUPER_ADMIN"){
+                            AuthenticationService.setAdminStatus(true);
+                        }
                         this.props.history.push('/dashboard')
                     }
                 })

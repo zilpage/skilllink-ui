@@ -26,7 +26,7 @@ class AppService {
 
     static createCampaign (params) {
         let options = Object();
-        options.url = UrlService.API_BASE_PATH + UrlService.CREATE_CAMPAIGN;
+        options.url = UrlService.API_BASE_PATH + UrlService.CAMPAIGN;
         options.params = params;
         options.authenticated = true;      
         return request.post(options);
@@ -47,6 +47,24 @@ class AppService {
         options.authenticated = false;      
         return request.get(options);
     }
+
+    static getAdminCampaigns () {
+        let options = Object();
+        options.url = UrlService.API_BASE_PATH + UrlService.GET_ADMIN_CAMPAIGNS;
+        options.params = null;
+        options.authenticated = true;      
+        return request.get(options);
+    }
+
+    static getCampaignById (id) {
+        let options = Object();
+        options.url = UrlService.API_BASE_PATH + UrlService.CAMPAIGN+"/"+id;
+        options.params = null;
+        options.authenticated = true;      
+        return request.get(options);
+    }
+
+    
 
     
 

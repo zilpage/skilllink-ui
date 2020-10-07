@@ -1,70 +1,100 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import { Link } from 'react-router-dom'
 import Navigation from './../../component/navigation/header';
 import Footer from './../../component/navigation/footer';
 
-function App() {
-    return (
-        <div className="App" id="scrool">
-            <div className="App">
-                <Navigation />
-                {/* <div className="wpo-breadcumb-area">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12">
-                                <div className="wpo-breadcumb-wrap">
-                                    <h2>Single Campaign</h2>
-                                    <ul>
-                                        <li><Link to="/">Home</Link></li>
-                                        <li><span>Education for All Children</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
-                <div className="wpo-event-details-area section-padding">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col col-lg-8">
-                                <div className="wpo-event-item">
-                                    <div className="wpo-event-img">
-                                        <img src="/static/media/event-details2.77d9a11c.jpg" alt="" />
-                                        <div className="thumb-text"><span>25</span><span>NOV</span></div>
-                                    </div>
-                                    <div className="wpo-event-details-text">
-                                        <h2>Education for All Children</h2>
-                                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.</p>
-                                    </div>
-                                    <div className="wpo-event-details-wrap">
-                                        <div className="wpo-event-details-tab">
-                                            <ul className="nav nav-tabs">
-                                                <li className="nav-item"><a className="active nav-link">Event Schedule</a></li>
-                                            </ul>
+import AppService from './../../service/app_service'
+import AuthenticationService from './../../service/authentication_service'
+import UrlService from './../../service/url_service';
+
+class App extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            result: null,
+        }
+    }
+
+    componentDidMount() {
+        console.log(this.props)
+        this.getCampaignById(this.props.match.params.id);
+
+    }
+
+
+    getCampaignById = (id) => {
+        AppService.getCampaignById(id).then(response => {
+            this.setState({ loadingMessage: null, loading: false },
+                () => {
+                    console.log(response);
+                    if (response.code) {
+                        alert(response.description)
+                        this.setState({ errors: response.errors, loading: false })
+                    } else {
+                        this.setState({ result: response, loading: false, })
+                    }
+                })
+        })
+    }
+
+
+
+
+
+
+    render() {
+        const { result } = this.state;
+        return (
+            <div className="App" id="scrool">
+                <div className="App">
+                    <Navigation />
+                    <div className="wpo-event-details-area section-padding">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col col-lg-8">
+                                    {result && <div className="wpo-event-item">
+                                        <div className="wpo-event-img">
+                                            <img src="/static/media/event-details2.77d9a11c.jpg" alt="" />
+                                            <div className="thumb-text"><span>25</span><span>NOV</span></div>
                                         </div>
-                                        <div className="wpo-event-details-content">
-                                            <div className="tab-content">
-                                                <div id="Schedule" className="tab-pane active">
-                                                    <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
-                                                    <ul>
-                                                        <li>The wise man therefore in these matters.</li>
-                                                        <li>In a free hour, when our power of choice and when nothing.</li>
-                                                        <li>Else he pains to avoid pains.</li>
-                                                        <li>We denounce with righteous indignation dislike men. </li>
-                                                        <li>Which is the same as saying through.</li>
-                                                        <li>The wise man therefore always holds in these matters.</li>
-                                                        <li>Power of choice and when nothing.</li>
-                                                        <li>Pains to avoid worse pains.</li>
-                                                    </ul>
+                                        <div className="wpo-event-details-text">
+                                            <h2>{result.title}</h2>
+                                            <p><img src={UrlService.FILE_BASE_PATH + result.coverPhoto} /></p>
+                                        </div>
+                                        <div className="wpo-event-details-wrap">
+                                            <div className="wpo-event-details-tab">
+                                                <ul className="nav nav-tabs">
+                                                    <li className="nav-item"><a className="active nav-link">Goal : {result.goal.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}</a></li>
+                                                </ul>
+                                            </div>
+                                            <div className="wpo-event-details-content">
+                                                <div className="tab-content">
+                                                    <div id="Schedule" className="tab-pane active">
+                                                        <p>{result.story}</p>
+                                                        {result && result.contributions && result.contributions.length > 0  &&<ul>
+
+                                                            <h4>Donations</h4>
+                                                            {
+                                                                result.contributions.map((item, i)=>{
+                                                                    return <li>{item.firstName+' '+item.lastName} contributed {item.amount.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}.</li>
+                                                                })
+                                                            }
+                                                            
+                                                        </ul>}
+                                                    </div>
+
                                                 </div>
-                                                
+                                                <div className="btns" >
+                                                    <Link className="theme-btn" to={"/donate/" + this.props.match.params.id} style={{ color: 'white' }} >Donate Now</Link>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>}
                                 </div>
-                            </div>
-                            <div className="col col-lg-4 col-12">
+                                {/* <div className="col col-lg-4 col-12">
                                 <div className="wpo-blog-sidebar">
                                     
                                     <div className="widget recent-post-widget">
@@ -94,22 +124,23 @@ function App() {
                                         </div>
                                     </div>
                                 </div>
+                            </div> */}
                             </div>
                         </div>
                     </div>
-                </div>
-                <Footer />
-                
-                <div className="col-lg-12">
-                    <div className="header-menu">
-                        <ul className="smothscroll">
-                            <li><a href="#scrool"><i className="fa fa-arrow-up" /></a></li>
-                        </ul>
+                    <Footer />
+
+                    <div className="col-lg-12">
+                        <div className="header-menu">
+                            <ul className="smothscroll">
+                                <li><a href="#scrool"><i className="fa fa-arrow-up" /></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="Toastify" /></div>
-    );
+                <div className="Toastify" /></div>
+        )
+    };
 }
 
 export default App;

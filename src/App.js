@@ -24,9 +24,9 @@ function App() {
           <Route path="/login" exact component={Login} />
           <Route path="/signup" exact component={Signup} />
           <Route path="/campaign/list" exact component={CampaignList} />
-          <Route path="/campaign/detail" exact component={CampaignDetail} />
+          <Route path="/campaign/detail/:id" exact component={CampaignDetail} />
           <Route path="/dashboard" exact component={Dashboard} />
-          <Route path="/donate" exact component={Donation} />
+          <Route path="/donate/:id" exact component={Donation} />
         </Switch>
       </div>
     </Router>

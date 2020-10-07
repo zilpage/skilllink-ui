@@ -13,11 +13,12 @@ class App extends Component {
 
         this.state = {
             result: null,
+            campaignId: this.props.match.params.id,
         }
     }
 
     componentDidMount() {
-        this.getCampaigns();
+        this.getCampaignById(this.props.match.params.id);
 
     }
 
@@ -43,8 +44,8 @@ class App extends Component {
         })
     }
 
-    getCampaigns = () => {
-        AppService.getCampaigns().then(response => {
+    getCampaignById = (id) => {
+        AppService.getCampaignById(id).then(response => {
             this.setState({ loadingMessage: null, loading: false },
                 () => {
                     console.log(response);
@@ -106,11 +107,12 @@ class App extends Component {
                                 <div className="col-lg-8 offset-lg-2">
                                     <div className="wpo-donate-header">
                                         <h2>Make a Donation</h2>
+                                        <h4 style={{textAlign: 'center'}} >{result && result.title}</h4>
                                     </div>
                                     <div>
                                         <div className="wpo-donations-amount">
                                             <h2>Your Donation</h2>
-                                            <input type="text" className="form-control" name="text" id="text" placeholder="Enter Donation Amount" />
+                                            <input type="number" className="form-control" onChange={this.handleChange} name="amount" id="text" placeholder="Enter Donation Amount" />
                                         </div>
                                         <div className="wpo-donations-details">
                                             <h2>Details</h2>

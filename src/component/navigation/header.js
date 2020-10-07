@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 import { Link } from 'react-router-dom'
 
-import { withRouter } from 'react-router'; 
+import { withRouter } from 'react-router';
 import AuthenticationService from './../../service/authentication_service'
 
 
-import logo from  './../../SkillLink.png'
+import logo from './../../SkillLink.png'
 
 class App extends Component {
 
@@ -18,7 +18,7 @@ class App extends Component {
         }
     }
 
-    logout = () =>{
+    logout = () => {
         AuthenticationService.clearLocalstorage();
         this.props.history.push('/')
     }
@@ -54,7 +54,7 @@ class App extends Component {
                     <div className="header-content">
                         <div className="row">
                             <div className="col-lg-3 col-md-4 col-sm-4 col-4">
-                                <div className="logo"><a title ><img src={logo} alt="" style={{maxHeight: '80px'}} /></a></div>
+                                <div className="logo"><a title ><img src={logo} alt="" style={{ maxHeight: '80px' }} /></a></div>
                             </div>
                             <div className="col-lg-8 d-lg-block d-none">
                                 <nav>
@@ -71,23 +71,23 @@ class App extends Component {
 
 
                                         <li>
-                                            <Link to="/" className={this.props.location.pathname === "/"? "active": "inactive"}>
+                                            <Link to="/" className={this.props.location.pathname === "/" ? "active" : "inactive"}>
                                                 Home
                                         </Link>
 
                                         </li>
                                         <li>
-                                            <Link to="/about" className={this.props.location.pathname === "/about"? "active": "inactive"}>
+                                            <Link to="/about" className={this.props.location.pathname === "/about" ? "active" : "inactive"}>
                                                 About Us
                                         </Link>
                                         </li>
                                         <li>
-                                            <Link to="/contact" className={this.props.location.pathname === "/contact"? "active": "inactive"}>
+                                            <Link to="/contact" className={this.props.location.pathname === "/contact" ? "active" : "inactive"}>
                                                 Contact
                                         </Link>
                                         </li>
                                         <li>
-                                            <Link to="/campaign/list" className={this.props.location.pathname === "/campaign/list"? "active": "inactive"} >
+                                            <Link to="/campaign/list" className={this.props.location.pathname === "/campaign/list" ? "active" : "inactive"} >
                                                 Campaign
                                         </Link>
                                         </li>
@@ -98,15 +98,33 @@ class App extends Component {
                                         </Link>
                                         </li>}
 
-                                        {AuthenticationService.getToken() && <li>
-                                            <Link to="/dashboard" className={this.props.location.pathname === "/dashboard"? "active": "inactive"}>
+                                        {/* {AuthenticationService.getToken() && <li>
+                                            <Link to="/dashboard" className={this.props.location.pathname === "/dashboard" ? "active" : "inactive"}>
                                                 Dashboard
                                         </Link>
-                                        </li>}
-                                        {AuthenticationService.getToken() && <li>
+                                        </li>} */}
+                                        {/* {AuthenticationService.getToken() && <li>
                                             <a onClick={() => this.logout()} className="actives">
                                                 Logout
                                         </a>
+                                        </li>} */}
+
+                                        {AuthenticationService.getToken() && <li>
+                                            <Link to="/" className="actives">
+                                                Hi {AuthenticationService.getName()}
+                                            </Link>
+                                            <ul>
+                                                <li>
+                                                    <a onClick={() => this.logout()} className="actives">
+                                                        Logout
+                                        </a>
+                                                </li>
+                                                {AuthenticationService.getAdminStatus() && <li>
+                                                    <Link to="/dashboard" className={this.props.location.pathname === "/dashboard" ? "active" : "inactive"}>
+                                                        Dashboard
+                                                    </Link>
+                                                </li>}
+                                            </ul>
                                         </li>}
 
                                     </ul>

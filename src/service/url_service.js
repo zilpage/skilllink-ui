@@ -8,8 +8,10 @@ const UrlService =  {
     // user management
     LOGIN: "/users/login",
     SIGN_UP: "/users/create",
-    CREATE_CAMPAIGN: "/campaign",
+    CAMPAIGN: "/campaign",
     GET_CAMPAIGNS: "/campaigns",
+    GET_MY_CAMPAIGNS: "/my/campaigns",
+    GET_ADMIN_CAMPAIGNS: "/admin/campaigns",
     GET_PUBLIC_CAMPAIGNS: "/public/campaigns",
     ACTIVATE_CAMPAIGN: "/activate/campaign",
     CONTRIBUTION: "/contribution",

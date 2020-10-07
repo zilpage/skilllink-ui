@@ -51,6 +51,19 @@ class AuthenticationService {
 
     }
 
+
+    static getAdminStatus() { return localStorage.getItem('app:auth:admin'); }
+
+    static setAdminStatus(status) {
+
+        if (_.isNull(status)) {
+            localStorage.removeItem('app:auth:admin');
+        } else {
+            localStorage.setItem('app:auth:admin', status);
+        }
+
+    }
+
 }
 
 export default AuthenticationService;

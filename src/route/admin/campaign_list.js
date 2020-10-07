@@ -45,7 +45,7 @@ class App extends Component {
                 if (response.code) {
                     alert(response.description)
                 } else {
-                    this.setState({ coverImage: response.description })
+                    this.setState({ coverPhoto: response.description })
                     alert('file upload successful')
                 }
             })
@@ -67,6 +67,7 @@ class App extends Component {
                         this.setState({ errors: response.errors, loading: false })
                     } else {
                         this.setState({ loading: false, result: null })
+                        alert("Successfully created")
                         this.getCampaigns();
                     }
                 })
@@ -99,6 +100,7 @@ class App extends Component {
                         this.setState({ errors: response.errors, loading: false })
                     } else {
                         this.setState({ loading: false, result: null })
+                        alert("Successfully activated")
                         this.getCampaigns();
                     }
                 })
@@ -170,7 +172,7 @@ class App extends Component {
                                                 <div className="MuiFormControl-root MuiTextField-root inputOutline MuiFormControl-fullWidth">
                                                     <label className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined" data-shrink="true">Cover Photo</label>
                                                     <div className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl">
-                                                    <img src={UrlService.FILE_BASE_PATH+this.state.coverImage} alt="" style={{maxHeight: "60px"}} />
+                                                    <img src={UrlService.FILE_BASE_PATH+this.state.coverPhoto} alt="" style={{maxHeight: "60px"}} />
                                                         <input aria-invalid="false" name="coverPhoto" type="file" accept="image/*"
                                                             onInput={(event) => {
                                                                 this.uploadonly(event)
@@ -251,7 +253,7 @@ class App extends Component {
                                         return <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid" key={i}>
                                             <div className="wpo-event-item">
                                                 <div className="wpo-event-img">
-                                                    <img src={UrlService.FILE_BASE_PATH+item.coverImage} alt="" />
+                                                    <img src={UrlService.FILE_BASE_PATH+item.coverPhoto} alt="" />
                                                     <div className="thumb-text"><span>25</span><span>NOV</span></div>
                                                 </div>
                                                 <div className="wpo-event-text slide-caption">
@@ -262,10 +264,9 @@ class App extends Component {
 
                                                     </ul>
                                                     <p>{item.story}</p>
-                                                    {!item.enabled && <button className="MuiButtonBase-root MuiButton-root MuiButton-text cBtn cBtnLarge cBtnTheme MuiButton-fullWidth" onClick={() => this.activateCampaign(item, true)} tabIndex={0} ><span className="MuiButton-label">Activate</span><span className="MuiTouchRipple-root" /></button>}
-                                                    <Link to="/campaign/detail">Learn More...</Link>
+                                                    <Link to={"/campaign/detail/"+item.id}>Learn More...</Link>
                                                     <div className="btns" >
-                                                        <Link className="theme-btn" to="/donate" style={{ color: 'white' }} >Donate Now</Link>
+                                                        <Link className="theme-btn" to={"/donate/"+item.id} style={{ color: 'white' }} >Donate Now</Link>
                                                     </div>
                                                 </div>
                                             </div>

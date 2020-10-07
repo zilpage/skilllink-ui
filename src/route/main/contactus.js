@@ -34,25 +34,25 @@ function App() {
                                             <div className="row">
                                                 <div className="col-lg-6 col-md-12">
                                                     <div className="form-field">
-                                                        <input type="text" name="name" placeholder="Name" defaultValue />
+                                                        <input type="text" name="name" placeholder="Name"  />
                                                         <p />
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-6 col-md-12">
                                                     <div className="form-field">
-                                                        <input type="text" name="lastname" placeholder="Lastname" defaultValue />
+                                                        <input type="text" name="lastname" placeholder="Lastname"  />
                                                         <p />
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-12">
                                                     <div className="form-field">
-                                                        <input type="email" name="email" placeholder="Email" defaultValue />
+                                                        <input type="email" name="email" placeholder="Email"  />
                                                         <p />
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-12">
                                                     <div className="form-field">
-                                                        <input type="text" name="subject" placeholder="Subject" defaultValue />
+                                                        <input type="text" name="subject" placeholder="Subject"  />
                                                         <p />
                                                     </div>
                                                 </div>
