@@ -27,29 +27,28 @@ class App extends Component {
         console.log(this.props.location.pathname);
         return (
             <div className="middle-header header-style-3">
-                {/* <div className="topbar">
+                <div className="topbar">
                 <div className="container">
                     <div className="row">
                         <div className="col col-md-6 col-sm-12 col-12">
                             <div className="contact-intro">
                                 <ul>
-                                    <li><i className="fi flaticon-call" />+000123456789</li>
-                                    <li><i className="fi flaticon-envelope" /> nasarna@gmail.com</li>
+                                    <li><i className="fa fa-phone" /> +234-703 4000 056</li>
+                                    <li><i className="fa fa-envelope" /> info@skillLink.com</li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col col-md-6 col-sm-12 col-12">
                             <div className="contact-info">
-                                <ul>
-                                    <li><a href="/login">Login</a></li>
-                                    <li><a href="/signup">Sign Up</a></li>
-                                    <li><a className="theme-btn" href="/donate">Donate Now</a></li>
-                                </ul>
+                               {!AuthenticationService.getToken() && <ul>
+                                    <li><Link to="/login">Login</Link></li>
+                                    <li><Link to="/signup">Sign Up</Link></li>
+                                </ul>}
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
                 <div className="container">
                     <div className="header-content">
                         <div className="row">
@@ -92,11 +91,11 @@ class App extends Component {
                                         </Link>
                                         </li>
 
-                                        {!AuthenticationService.getToken() && <li>
+                                        {/* {!AuthenticationService.getToken() && <li>
                                             <Link to="/login" className="actives">
                                                 Login
                                         </Link>
-                                        </li>}
+                                        </li>} */}
 
                                         {/* {AuthenticationService.getToken() && <li>
                                             <Link to="/dashboard" className={this.props.location.pathname === "/dashboard" ? "active" : "inactive"}>

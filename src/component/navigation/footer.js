@@ -27,12 +27,12 @@ function App({ history }) {
                             <div className="widget about-widget">
                                 <div className="logo widget-title"><img src="/static/media/logo-2.c1ceef2e.png" alt="" /></div>
                                 <p>Building a self sufficient future for young girls. </p>
-                                <ul>
+                                {/* <ul>
                                     <li><a href="/home"><i className="ti-facebook" /></a></li>
                                     <li><a href="/home"><i className="ti-twitter-alt" /></a></li>
                                     <li><a href="/home"><i className="ti-instagram" /></a></li>
                                     <li><a href="/home"><i className="ti-google" /></a></li>
-                                </ul>
+                                </ul> */}
                             </div>
                         </div>
                         <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
@@ -67,9 +67,9 @@ function App({ history }) {
                                 {/* <p>online store with lots of cool and exclusive wpo-features</p> */}
                                 <div className="contact-ft">
                                     <ul>
-                                        <li><i className="fi flaticon-pin" />3O Bromley, Cadogan Estate, Jakande, Lekki-Lagos State-Nigeria </li>
-                                        <li><i className="fi flaticon-call" />234-703 4000 056 or 234-703 9378 492</li>
-                                        <li><i className="fi flaticon-envelope" />skilllink@gmail.com</li>
+                                        <li><i className="fa fa-pin" />3O Bromley, Cadogan Estate, Jakande, Lekki-Lagos State-Nigeria </li>
+                                        <li><i className="fa fa-telephone" /> 234-703 4000 056 or 234-703 9378 492</li>
+                                        <li><i className="fa fa-envelope" /> skilllink@gmail.com</li>
                                     </ul>
                                 </div>
                             </div>

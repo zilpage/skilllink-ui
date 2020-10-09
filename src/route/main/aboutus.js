@@ -11,7 +11,7 @@ function App() {
 
             <Navigation />
 
-            <div className="wpo-breadcumb-area" style={{ maxHeight: '40px', minHeight: '150px' }} >
+            <div className="wpo-breadcumb-area" style={{background: 'url(http://nasarna-react.wpocean.com/static/media/img-1.f69696e6.jpg)' }} >
                 <div className="container">
                     <div className="row">
                         <div className="col-12">

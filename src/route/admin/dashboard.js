@@ -146,7 +146,7 @@ class App extends Component {
                                             <div className="wpo-event-item">
                                                 <div className="wpo-event-img">
                                                     <img src={UrlService.FILE_BASE_PATH + item.coverPhoto} alt="" />
-                                                    <div className="thumb-text"><span>25</span><span>NOV</span></div>
+                                                    {/* <div className="thumb-text"><span>25</span><span>NOV</span></div> */}
                                                 </div>
                                                 <div className="wpo-event-text slide-caption">
                                                     <h2>{item.title}</h2>
@@ -178,15 +178,18 @@ class App extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
-                                <div className="wpo-counter-grids">
+                                <h3 style={{color: 'white', textAlign: 'center'}}>Statistics</h3>
+                                <div className="wpo-mission-wrap row">
                                     {
                                         result && result.dashboard && result.dashboard.items && result.dashboard.items.length > 0 && result.dashboard.items.map((item, i) => {
-                                            return <div className="grid">
-                                                <div>
-                                                    <h2><span className="odometer" data-count={item.value}>{item.value}</span></h2>
+                                            return  <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid" style={{marginTop: '40px'}}>
+                                            <div className="wpo-mission-item">
+                                                <div className="wpo-mission-content">
+                                                    <h2>{parseFloat(item.value).toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}</h2>
+                                                    <p>{item.name}</p>
                                                 </div>
-                                                <p>{item.name}</p>
                                             </div>
+                                        </div>
                                         })
                                     }
                                     

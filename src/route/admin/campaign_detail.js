@@ -67,7 +67,7 @@ class App extends Component {
                                         <div className="wpo-event-details-wrap">
                                             <div className="wpo-event-details-tab">
                                                 <ul className="nav nav-tabs">
-                                                    <li className="nav-item"><a className="active nav-link">Goal : {result.goal.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}</a></li>
+                                                    <li className="nav-item"><a className="active nav-link">Goal : &#8358; {result && result.goal && result.goal.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}</a></li>
                                                 </ul>
                                             </div>
                                             <div className="wpo-event-details-content">
@@ -79,7 +79,7 @@ class App extends Component {
                                                             <h4>Donations</h4>
                                                             {
                                                                 result.contributions.map((item, i)=>{
-                                                                    return <li>{item.firstName+' '+item.lastName} contributed {item.amount.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}.</li>
+                                                                    return <li>{item.firstName+' '+item.lastName} contributed &#8358; {item.amount.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}.</li>
                                                                 })
                                                             }
                                                             
