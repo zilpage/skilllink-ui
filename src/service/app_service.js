@@ -1,6 +1,5 @@
 import request from './request_service';
 import UrlService from './url_service';
-import AuthenticationService from './authentication_service'
 class AppService {
 
     

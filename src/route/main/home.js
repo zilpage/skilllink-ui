@@ -188,7 +188,7 @@ class App extends Component {
 
                 <div className="col-lg-6 col-md-12 colsm-12">
                   <div style={{marginTop: '15%'}} >
-                    <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/11/holding_hands_in_support-1296x728-header-1296x728.jpg?w=1155&h=1528" />
+                    <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/11/holding_hands_in_support-1296x728-header-1296x728.jpg?w=1155&h=1528" alt="Image" />
                   </div>
                 </div>
 
@@ -206,6 +206,10 @@ class App extends Component {
                 <div className="slick-slider slick-initialized" dir="ltr">
                   <button type="button" data-role="none" className="slick-arrow slick-prev" style={{ display: 'block' }}> Previous</button>
                   <div className="slick-list"><div className="slick-track" style={{ width: '4070px', opacity: 1, transform: 'translate3d(-1850px, 0px, 0px)', transition: '-webkit-transform 500ms ease 0s' }}>
+                    
+                    
+                    
+                    
                     <div data-index={-3} tabIndex={-1} className="slick-slide slick-cloned" aria-hidden="true" style={{ width: '370px' }}><div>
                       <div className="wpo-case-single" tabIndex={-1} style={{ width: '100%', display: 'inline-block' }}>
                         <div className="wpo-case-item"><div className="wpo-case-img"><img src="/static/media/img-2.7f30d201.png" alt="" /></div>
@@ -215,7 +219,9 @@ class App extends Component {
                             </div><ul><li><span>Raised:</span> $7,000.00</li><li><span>Goal:</span> $8,000.00</li></ul>
                           </div><div className="case-btn"><ul><li><a href="/case-single">Learn More</a></li>
                             <li><a href="/donate">Donate Now</a></li></ul></div></div></div>
-                      </div></div></div><div data-index={-2} tabIndex={-1} className="slick-slide slick-cloned" aria-hidden="true" style={{ width: '370px' }}>
+                      </div></div></div>
+                      
+                      <div data-index={-2} tabIndex={-1} className="slick-slide slick-cloned" aria-hidden="true" style={{ width: '370px' }}>
                       <div>
                         <div className="wpo-case-single" tabIndex={-1} style={{ width: '100%', display: 'inline-block' }}>
                           <div className="wpo-case-item"><div className="wpo-case-img">
@@ -226,31 +232,48 @@ class App extends Component {
                                   </div></div></div></div><ul><li><span>Raised:</span> $7,000.00</li><li><span>Goal:</span> $8,000.00</li></ul>
                               </div><div className="case-btn"><ul><li><a href="/case-single">Learn More</a></li><li><a href="/donate">Donate Now</a></li></ul>
                               </div></div></div></div></div></div>
-                    <div data-index={-1} tabIndex={-1} className="slick-slide slick-cloned" aria-hidden="true" style={{ width: '370px' }}>
-                      <div>
-                        <div className="wpo-case-single" tabIndex={-1} style={{ width: '100%', display: 'inline-block' }}>
-                          <div className="wpo-case-item"><div className="wpo-case-img"><img src="/static/media/img-1.db23ba6d.png" alt="" /></div>
-                            <div className="wpo-case-content"><div className="wpo-case-text-top"><h2>Ensure Education for every poor children</h2>
-                              <div className="progress-section"><div className="process"><div className="progress"><div className="progress-bar">
-                                <div className="progress-value"><span>65.5</span>%</div></div></div></div></div>
-                              <ul><li><span>Raised:</span> $7,000.00</li><li><span>Goal:</span> $8,000.00</li></ul></div><div className="case-btn"><ul><
-                                li><a href="/case-single">Learn More</a></li><li><a href="/donate">Donate Now</a></li></ul></div></div></div></div></div></div>
-                    <div data-index={0} className="slick-slide" tabIndex={-1} aria-hidden="true" style={{ outline: 'none', width: '370px' }}>
-                      <div>
-                        <div className="wpo-case-single" tabIndex={-1} style={{ width: '100%', display: 'inline-block' }}><div className="wpo-case-item">
-                          <div className="wpo-case-img"><img src="/static/media/img-1.db23ba6d.png" alt="" /></div><div className="wpo-case-content"><div className="wpo-case-text-top"><h2>Ensure Education for every poor children</h2><div className="progress-section"><div className="process"><div className="progress"><div className="progress-bar"><div className="progress-value"><span>65.5</span>%</div>
-                          </div></div></div></div><ul><li><span>Raised:</span> $7,000.00</li><li><span>Goal:</span> $8,000.00</li></ul></div><div className="case-btn"><ul><li><a href="/case-single">Learn More</a></li><li><a href="/donate">Donate Now</a></li></ul></div>
-                          </div></div></div></div>
-                    </div>
+                    
+                   
+                              <div data-index={-3} tabIndex={-1} className="slick-slide slick-cloned" aria-hidden="true" style={{ width: '370px' }}><div>
+                      <div className="wpo-case-single" tabIndex={-1} style={{ width: '100%', display: 'inline-block' }}>
+                        <div className="wpo-case-item"><div className="wpo-case-img"><img src="/static/media/img-2.7f30d201.png" alt="" /></div>
+                          <div className="wpo-case-content"><div className="wpo-case-text-top"><h2>Supply drinking water for the people</h2>
+                            <div className="progress-section"><div className="process"><div className="progress"><div className="progress-bar">
+                              <div className="progress-value"><span>40.5</span>%</div></div></div></div>
+                            </div><ul><li><span>Raised:</span> $7,000.00</li><li><span>Goal:</span> $8,000.00</li></ul>
+                          </div><div className="case-btn"><ul><li><a href="/case-single">Learn More</a></li>
+                            <li><a href="/donate">Donate Now</a></li></ul></div></div></div>
+                      </div></div></div>
 
+                      <div data-index={-3} tabIndex={-1} className="slick-slide slick-cloned" aria-hidden="true" style={{ width: '370px' }}><div>
+                      <div className="wpo-case-single" tabIndex={-1} style={{ width: '100%', display: 'inline-block' }}>
+                        <div className="wpo-case-item"><div className="wpo-case-img"><img src="/static/media/img-2.7f30d201.png" alt="" /></div>
+                          <div className="wpo-case-content"><div className="wpo-case-text-top"><h2>Supply drinking water for the people</h2>
+                            <div className="progress-section"><div className="process"><div className="progress"><div className="progress-bar">
+                              <div className="progress-value"><span>40.5</span>%</div></div></div></div>
+                            </div><ul><li><span>Raised:</span> $7,000.00</li><li><span>Goal:</span> $8,000.00</li></ul>
+                          </div><div className="case-btn"><ul><li><a href="/case-single">Learn More</a></li>
+                            <li><a href="/donate">Donate Now</a></li></ul></div></div></div>
+                      </div></div></div>
+
+                      <div data-index={-3} tabIndex={-1} className="slick-slide slick-cloned" aria-hidden="true" style={{ width: '370px' }}><div>
+                      <div className="wpo-case-single" tabIndex={-1} style={{ width: '100%', display: 'inline-block' }}>
+                        <div className="wpo-case-item"><div className="wpo-case-img"><img src="/static/media/img-2.7f30d201.png" alt="" /></div>
+                          <div className="wpo-case-content"><div className="wpo-case-text-top"><h2>Supply drinking water for the people</h2>
+                            <div className="progress-section"><div className="process"><div className="progress"><div className="progress-bar">
+                              <div className="progress-value"><span>40.5</span>%</div></div></div></div>
+                            </div><ul><li><span>Raised:</span> $7,000.00</li><li><span>Goal:</span> $8,000.00</li></ul>
+                          </div><div className="case-btn"><ul><li><a href="/case-single">Learn More</a></li>
+                            <li><a href="/donate">Donate Now</a></li></ul></div></div></div>
+                      </div></div></div>
 
 
 
                     {
                       result && result.list && result.list.length > 0 && result.list.map((item, i) => {
-                        return <div data-index={2} className="slick-slide slick-active slick-current" tabIndex={-1} aria-hidden="false" style={{ outline: 'none', width: '370px' }}>
+                        return <div data-index={1} className="slick-slide slick-actives slick-currents" tabIndex={-0} aria-hidden="false" style={{  width: '370px' }}>
                           <div>
-                            <div className="wpo-case-single" tabIndex={-1} style={{ width: '100%', display: 'inline-block' }}>
+                            <div className="wpo-case-single" tabIndex={-0} style={{ width: '100%', display: 'inline-block' }}>
                               <div className="wpo-case-item">
                                 <div className="wpo-case-img"><img src={UrlService.FILE_BASE_PATH+item.coverPhoto}  alt="" /></div>
                                 <div className="wpo-case-content">

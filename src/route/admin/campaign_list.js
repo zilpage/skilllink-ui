@@ -254,13 +254,15 @@ class App extends Component {
                                             <div className="wpo-event-item">
                                                 <div className="wpo-event-img">
                                                     <img src={UrlService.FILE_BASE_PATH+item.coverPhoto} alt="" />
-                                                    <div className="thumb-text"><span>25</span><span>NOV</span></div>
+                                                    {/* <div className="thumb-text">
+                                                    <span>25</span><span>NOV</span>
+                                                    </div> */}
                                                 </div>
                                                 <div className="wpo-event-text slide-caption">
                                                     <h2>{item.title}</h2>
                                                     <ul>
                                                         <li><i className="fa fa-clock-ow" aria-hidden="true" />Goal</li>
-                                                        <li><i className="fi flaticon-pinsw" />N{item.goal.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}</li>
+                                                        <li><i className="fi flaticon-pinsw" />&#8358; {item.goal.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}</li>
 
                                                     </ul>
                                                     <p>{item.story}</p>

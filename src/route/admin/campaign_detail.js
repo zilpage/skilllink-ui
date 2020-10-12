@@ -5,7 +5,6 @@ import Navigation from './../../component/navigation/header';
 import Footer from './../../component/navigation/footer';
 
 import AppService from './../../service/app_service'
-import AuthenticationService from './../../service/authentication_service'
 import UrlService from './../../service/url_service';
 
 class App extends Component {
@@ -58,7 +57,7 @@ class App extends Component {
                                     {result && <div className="wpo-event-item">
                                         <div className="wpo-event-img">
                                             <img src="/static/media/event-details2.77d9a11c.jpg" alt="" />
-                                            <div className="thumb-text"><span>25</span><span>NOV</span></div>
+                                            {/* <div className="thumb-text"><span>25</span><span>NOV</span></div> */}
                                         </div>
                                         <div className="wpo-event-details-text">
                                             <h2>{result.title}</h2>
