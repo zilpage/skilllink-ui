@@ -25,7 +25,7 @@ function App({ history }) {
                         <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
                             <div className="widget about-widget">
                                 <div className="logo widget-title"><img src="/static/media/logo-2.c1ceef2e.png" alt="" /></div>
-                                <p>Building a self sufficient future for young girls. </p>
+                                <p>Building a self sufficient future for the Nigerian girl. </p>
                                 {/* <ul>
                                     <li><a href="/home"><i className="ti-facebook" /></a></li>
                                     <li><a href="/home"><i className="ti-twitter-alt" /></a></li>
@@ -67,7 +67,7 @@ function App({ history }) {
                                 <div className="contact-ft">
                                     <ul>
                                         <li><i className="fa fa-pin" />3O Bromley, Cadogan Estate, Jakande, Lekki-Lagos State-Nigeria </li>
-                                        <li><i className="fa fa-telephone" /> 234-703 4000 056 or 234-703 9378 492</li>
+                                        <li><i className="fa fa-telephone" /> 234-703 9378 492</li>
                                         <li><i className="fa fa-envelope" /> skilllink@gmail.com</li>
                                     </ul>
                                 </div>

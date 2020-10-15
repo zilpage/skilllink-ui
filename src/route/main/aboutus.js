@@ -33,7 +33,7 @@ function App() {
                         <div className="col-12">
                             <div className="wpo-section-title">
                                 <span>What We Do?</span>
-                                <h2>We Are In A Mission To Help The Helpless</h2>
+                                <h2>Help The Helpless</h2>
                             </div>
                         </div>
                     </div>

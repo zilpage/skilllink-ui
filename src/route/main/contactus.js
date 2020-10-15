@@ -96,7 +96,7 @@ function App() {
                                     </div>
                                     <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                                         <div className="info-item">
-                                            <h2>234-703 4000 056</h2>
+                                            <h2>234-703 9378 492</h2>
                                             <div className="info-wrap">
                                                 {/* <div className="info-icon-3"><i className="ti-headphone-alt" /></div> */}
                                                 <div className="info-text"><span>Official Phone</span></div>

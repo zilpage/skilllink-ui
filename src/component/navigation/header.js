@@ -33,7 +33,7 @@ class App extends Component {
                         <div className="col col-md-6 col-sm-12 col-12">
                             <div className="contact-intro">
                                 <ul>
-                                    <li><i className="fa fa-phone" /> +234-703 4000 056</li>
+                                    <li><i className="fa fa-phone" /> +234-703 9378 492</li>
                                     <li><i className="fa fa-envelope" /> info@skillLink.com</li>
                                 </ul>
                             </div>
