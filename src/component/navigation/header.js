@@ -34,7 +34,7 @@ class App extends Component {
                             <div className="contact-intro">
                                 <ul>
                                     <li><i className="fa fa-phone" /> +234-703 9378 492</li>
-                                    <li><i className="fa fa-envelope" /> info@skillLink.com</li>
+                                    <li><i className="fa fa-envelope" /> skilllinkng@gmail.com</li>
                                 </ul>
                             </div>
                         </div>
@@ -86,6 +86,11 @@ class App extends Component {
                                                 Our Work
                                         </Link>
                                         </li>
+                                        {/* <li>
+                                            <Link to="/get/involved" className={this.props.location.pathname === "/get/involved" ? "active" : "inactive"} >
+                                                Get Involved
+                                        </Link>
+                                        </li> */}
 
                                        
                                         <li>

@@ -23,7 +23,7 @@ function App() {
                             </div>
                         </div>
                         <div className="col-12">
-                            <p>
+                            <p style={{color: 'black'}}>
                                 We work with secondary school girls across Lagos State with strong academic, demonstrated Leadership
     traits, high sense of responsibility, or those who may be at a high risk of dropping out of secondary
     school.
@@ -50,7 +50,7 @@ function App() {
                                     {/* <span>What We Do?</span> */}
                                     <h2>Our Process:</h2>
                                 </div>
-                                <p>Our selection model has been designed to achieve a high completion rate on the part of our trainees as
+                                <p style={{color: 'black'}}>Our selection model has been designed to achieve a high completion rate on the part of our trainees as
 well as an overall high success rate.
                                 <li><strong>Step 1</strong>: We identify promising girls from various locations across Lagos state and map them to clusters.
     To achieve this, we conduct an assessment to select from the pool girls who meet our prequalification
@@ -90,7 +90,7 @@ completion rate and overall success of the program.</li>  </p>
                                     <h2></h2>
                                 </div>
 
-                                <p>
+                                <p style={{color: 'black'}}>
                                     We recognize that the work we do is important for both the Nigerian girl and the society, and we believe
                 that with the support of individuals and organizations looking to make a positive contribution to society,
                 we can make the most impact and transform society through our work,

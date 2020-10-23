@@ -52,7 +52,8 @@ class App extends Component {
                   <div className="row">
                     <div className="col col-lg-12 slide-caption">
                       <div className="slide-title">
-                        <h2>Skill <span>Link</span></h2>
+                        <h3>Committed to Building a Self-sufficient
+Future for the Nigerian Girl.</h3>
                       </div>
                       <div className="slide-subtitle">
                         <p>Skilllink connects girls from secondary schools across
@@ -111,7 +112,7 @@ giving them the power to transform their lives. </p>
               <div className="row">
                 <div className="col-lg-6 col-md-12 colsm-12">
                   <div className="wpo-about-text">
-                    <h3 style={{color: 'red'}}>Empowering Young Girls to Dream</h3>
+                    <h3 >Empowering Young Girls to Dream</h3>
                     <br/>
                     <h5>
                     We believe that the girl child is vibrant, creative,
@@ -142,7 +143,7 @@ dream, and to pursue her dreams.
                 <div className="col-lg-6 col-md-12 colsm-12">
                   <div className="wpo-about-text">
                     <h4></h4>
-                    <h3 style={{color: 'red'}}>Connecting Talent With Opportunity</h3>
+                    <h3 >Connecting Talent With Opportunity</h3>
                     <br/>
                     <h5>
                     With the right opportunities, talented young girls
@@ -165,7 +166,7 @@ to transform their lives and make an impact.
 
                 <div className="col-lg-6 col-md-12 colsm-12">
                   <div className="wpo-about-text">
-                    <h3 style={{color: 'red'}}>Driving Inclusion for a Better Society</h3>
+                    <h3 >Driving Inclusion for a Better Society</h3>
                     <br/>
                     <h5>
                     Our initiatives empower girls to build industry expertise,
@@ -196,8 +197,8 @@ industries, and narrowing the gender pay gap.
           <div className="wpo-mission-area undefined" style={{ marginTop: '50px' }} >
             <div className="container">
               <div className="row"><div className="col-12"><div className="wpo-section-title">
-                <span>What We Do?</span>
-                <h2>Help The Helpless</h2>
+                {/* <span>What We Do?</span> */}
+                <h2>Our Approach</h2>
               </div>
               </div>
               </div>
@@ -316,7 +317,7 @@ the Entire World. Through the Skilllink Program We Are</h2>
                       <h2></h2>
                     </div>
 
-                    <p>
+                    <p style={{color: 'black'}}>
                       We recognize that the work we do is important for both the Nigerian girl and the society, and we believe
   that with the support of individuals and organizations looking to make a positive contribution to society,
   we can make the most impact and transform society through our work,
@@ -354,7 +355,7 @@ the Entire World. Through the Skilllink Program We Are</h2>
 
 
 
-          <div className="wpo-case-area section-padding"><div className="container">
+          {result && result.list && result.list.length > 0 && <div className="wpo-case-area section-padding"><div className="container">
             <div className="row">
               {result && result.list && result.list.length > 0 && <div className="col-12"><div className="wpo-section-title">
                 <span></span>
@@ -473,7 +474,7 @@ the Entire World. Through the Skilllink Program We Are</h2>
 
                   </div>
                   </div>
-                  <button type="button" data-role="none" className="slick-arrow slick-next" style={{ display: 'block' }}> Next</button></div></div></div></div></div>
+                  <button type="button" data-role="none" className="slick-arrow slick-next" style={{ display: 'block' }}> Next</button></div></div></div></div></div>}
           {/* <div className="wpo-counter-area undefined">
             <div className="container">
               <div className="row">

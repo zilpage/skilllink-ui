@@ -87,7 +87,7 @@ function App() {
                                     </div>
                                     <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                                         <div className="info-item">
-                                            <h2>info@skilllink.org</h2>
+                                            <h2>skilllinkng@gmail.com</h2>
                                             <div className="info-wrap">
                                                 {/* <div className="info-icon-2"><i className="fi flaticon-envelope" /></div> */}
                                                 <div className="info-text"><span>Official Mail</span></div>

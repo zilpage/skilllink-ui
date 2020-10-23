@@ -32,12 +32,12 @@ function App() {
                     <div className="row">
                         <div className="col-12">
                             <div className="wpo-section-title">
-                                <span>Skilllink - Promoting Female Empowerment in Africa</span>
-                                <h2>Help The Helpless</h2>
+                                {/* <span>Skilllink - Promoting Female Empowerment in Africa</span> */}
+                                <h2>Skilllink - Promoting Female Empowerment in Africa</h2>
                             </div>
                         </div>
                         <div className="col-12">
-                            <p>
+                            <p style={{color: 'black'}}>
                             Skilllink is a platform that promotes female empowerment by connecting girls from secondary schools
 across Lagos state to opportunities that equip them with profitable vocational skills and technical
 knowledge, giving them the power to transform their lives.
@@ -61,12 +61,12 @@ as an attempt to narrow the gender pay gap.
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-12 colsm-12">
-                            <div className="wpo-about-text">
+                            <div className="wpo-about-text" style={{color: 'black'}}>
                                 <div className="wpo-section-title">
                                     {/* <span>What We Do?</span> */}
                                     <h2>How We Define Success</h2>
                                 </div>
-                                <p>The overall goal of the Skill Link platform and programs is to empower the less privileged Lagos schoolgirl to take control of her future. We have itemized below what success will look like for participants on the Skill Link platform:
+                                <p style={{color: 'black'}}>The overall goal of the Skill Link platform and programs is to empower the less privileged Lagos schoolgirl to take control of her future. We have itemized below what success will look like for participants on the Skill Link platform:
                                 <li>High completion rate of Skill Link programs by trainees, not less than 80%.</li>
                                 <li>High completion rate of secondary school education by trainees, not less than 80%.</li>
                                 <li>Increased rate of higher education enrollment among trainees.</li>
@@ -112,7 +112,7 @@ These Girls Live.</h2>
                       <h2></h2>
                     </div>
 
-                    <p>
+                    <p style={{color: 'black'}}>
                     We recognize that the work we do is important for both the Nigerian girl and the society, and we believe
 that with the support of individuals and organizations looking to make a positive contribution to society,
 we can make the most impact and transform society through our work,

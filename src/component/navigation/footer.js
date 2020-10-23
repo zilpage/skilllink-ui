@@ -66,9 +66,9 @@ function App({ history }) {
                                 {/* <p>online store with lots of cool and exclusive wpo-features</p> */}
                                 <div className="contact-ft">
                                     <ul>
-                                        <li><i className="fa fa-pin" />3O Bromley, Cadogan Estate, Jakande, Lekki-Lagos State-Nigeria </li>
+                                        <li><i className="fa fa-pin" />30 Bromley Cadogan estate, Jakande, Lekki-Lagos State-Nigeria </li>
                                         <li><i className="fa fa-telephone" /> 234-703 9378 492</li>
-                                        <li><i className="fa fa-envelope" /> skilllink@gmail.com</li>
+                                        <li><i className="fa fa-envelope" /> skilllinkng@gmail.com</li>
                                     </ul>
                                 </div>
                             </div>
@@ -82,6 +82,7 @@ function App({ history }) {
                     <div className="row">
                         <div className="col col-xs-12">
                             <p className="copyright">© 2020 Skilllink. All rights reserved</p>
+                            <p>For donations, sponsorships, and support, kindly contact us: skilllinkng@gmail.com</p>
                         </div>
                     </div>
                 </div>
