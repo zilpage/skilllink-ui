@@ -80,6 +80,13 @@ class App extends Component {
                                                 About Us
                                         </Link>
                                         </li>
+
+                                        <li>
+                                            <Link to="/ourwork" className={this.props.location.pathname === "/ourwork" ? "active" : "inactive"} >
+                                                Our Work
+                                        </Link>
+                                        </li>
+
                                        
                                         <li>
                                             <Link to="/campaign/list" className={this.props.location.pathname === "/campaign/list" ? "active" : "inactive"} >

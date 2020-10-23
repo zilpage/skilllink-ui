@@ -55,10 +55,13 @@ class App extends Component {
                         <h2>Skill <span>Link</span></h2>
                       </div>
                       <div className="slide-subtitle">
-                        <p>Skill Link is a platform that promotes gender equality by connecting girls in Lagos State senior secondary schools, to opportunities that enable them develop lifelong and profitable vocational skills. The program will focus on vocations which have been largely dominated by the male gender. </p>
+                        <p>Skilllink connects girls from secondary schools across
+Lagos state to opportunities that equip them with
+profitable vocational skills and technical knowledge,
+giving them the power to transform their lives. </p>
                         {/* <p>You Can Satisfied Yourself By Helping.</p> */}
                       </div>
-                      <div className="btns"><Link className="theme-btn" to="/campaign/list">Donate Now</Link></div>
+                      <div className="btns"><Link className="theme-btn" to="/aboutus">Learn More</Link></div>
                     </div>
                   </div>
                 </div>
@@ -100,6 +103,96 @@ class App extends Component {
             </div>
             <div className="hero-shape"><img src="/static/media/shape.2e77d2d5.jpg" alt="" /></div>
           </section> */}
+
+
+
+          <div className="wpo-about-area section-padding">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-6 col-md-12 colsm-12">
+                  <div className="wpo-about-text">
+                    <h3 style={{color: 'red'}}>Empowering Young Girls to Dream</h3>
+                    <br/>
+                    <h5>
+                    We believe that the girl child is vibrant, creative,
+and smart and that she deserves the freedom to
+dream, and to pursue her dreams.
+                    </h5>
+
+                  </div>
+                </div>
+
+                <div className="col-lg-6 col-md-12 colsm-12">
+                  <div style={{ marginTop: '15%' }} >
+                    {/* <img src="https://www.unicefusa.org/sites/default/files/styles/standard_layout_banner/public/field-images/story-banner/2018/Screen%20Shot%202018-10-09%20at%2012.19.42%20PM_0.png?itok=DjH3P8sA" alt="Image" /> */}
+                  </div>
+                </div>
+                <br/>
+                    <br/>
+                    <br/>
+
+
+                <div className="col-lg-6 col-md-12 colsm-12">
+                  <div style={{ marginTop: '1%' }} >
+                    {/* <img src="https://connectingtalent.com.my/wp-content/uploads/2019/09/logo.png" alt="Image" /> */}
+                  </div>
+                </div>
+
+
+                <div className="col-lg-6 col-md-12 colsm-12">
+                  <div className="wpo-about-text">
+                    <h4></h4>
+                    <h3 style={{color: 'red'}}>Connecting Talent With Opportunity</h3>
+                    <br/>
+                    <h5>
+                    With the right opportunities, talented young girls
+from disadvantaged backgrounds are empowered
+to transform their lives and make an impact.
+                    </h5>
+
+                  </div>
+                </div>
+                <br/>
+                    <br/>
+                    <br/>
+
+
+
+
+
+
+
+
+                <div className="col-lg-6 col-md-12 colsm-12">
+                  <div className="wpo-about-text">
+                    <h3 style={{color: 'red'}}>Driving Inclusion for a Better Society</h3>
+                    <br/>
+                    <h5>
+                    Our initiatives empower girls to build industry expertise,
+positioning them as future leaders in male-dominted
+industries, and narrowing the gender pay gap.
+                    </h5>
+
+                  </div>
+                </div>
+
+                <div className="col-lg-6 col-md-12 colsm-12">
+                  <div style={{ marginTop: '15%' }} >
+                    {/* <img src="https://s3.amazonaws.com/brt.org/DrivingINclusion.jpg" alt="Image" /> */}
+                  </div>
+                </div>
+
+
+                
+                </div></div></div>
+
+
+
+
+
+
+
+
           <div className="wpo-mission-area undefined" style={{ marginTop: '50px' }} >
             <div className="container">
               <div className="row"><div className="col-12"><div className="wpo-section-title">
@@ -117,7 +210,10 @@ class App extends Component {
                       </div>
                       <div className="wpo-mission-content">
                         <h2>Discover</h2>
-                        <p>we identify the girls in their various locations and map them to clusters;.</p>
+                        <p>Promising young girls in
+the state are identified
+and mapped into
+groups for engagement</p>
                       </div>
                     </div>
                   </div>
@@ -128,7 +224,11 @@ class App extends Component {
                       </div>
                       <div className="wpo-mission-content">
                         <h2>Engage</h2>
-                        <p>through meetings, we engage the cluster of girls and raise awareness on vocational training.</p>
+                        <p>Commencement of a
+preparatory orientation
+process to get
+participants familiarized
+with the program.</p>
                       </div>
                     </div>
                   </div>
@@ -139,7 +239,12 @@ class App extends Component {
                       </div>
                       <div className="wpo-mission-content">
                         <h2>Link</h2>
-                        <p>the girls are onboarded unto the Skill Link platform and matched with opportunities.</p>
+                        <p>Participants are onboarded
+into the skilllink program
+and matched with
+opportunities to gain
+real-world skills and
+experiences.</p>
                       </div>
                     </div>
                   </div>
@@ -150,7 +255,10 @@ class App extends Component {
                       </div>
                       <div className="wpo-mission-content">
                         <h2>Retain</h2>
-                        <p> we have a fulfilment and monitoring track that ensures high completion rates and skill acquisition by Skill Link trainees.</p>
+                        <p> Our unique fulfillment &
+monitoring track ensures a
+high participant completion
+rate and overall success.</p>
                       </div>
                     </div>
                   </div>
@@ -164,10 +272,56 @@ class App extends Component {
                 <div className="col-lg-6 col-md-12 colsm-12">
                   <div className="wpo-about-text">
                     <div className="wpo-section-title">
-                      <span>What We Do?</span>
-                      <h2>We Are In A Mission To Help The Helpless</h2>
+                      <span>Why Skilllink?</span>
+                      <h2>Investing in Girls’ Education Transforms Communities, Countries, and
+the Entire World. Through the Skilllink Program We Are</h2>
                     </div>
-                    <p>Skill Link targets girls in senior secondary schools in Lagos State. The focus will be on students with strong good records; demonstrated leadership traits; high sense of responsibility; or show signs that they may be at risk of dropping out of secondary school. Girls who participate in Skill Link will not only gain useful vocational skills, they will also be taught to appreciate the benefits of acquiring these skills, basic business management skills and some finishing-school type lessons. The plan is for them, having been trained, to be able to engage their communities and become change agents who create awareness on the importance of being skilled and having positive work ethics. </p>
+                    <ul>
+                      <li>
+                        Increasing the chances of girls completing secondary school.
+                      </li>
+                      <li>
+                        Providing an opportunity for young girls to advance their education and fulfill their dreams
+                      </li>
+                      <li>
+                        Empowering girls to be entrepreneurial and self-sufficient through the acquisition of profitable skills
+                      </li>
+                      <li>
+                        Creating a support structure to give hope to girls who may not be able to further their education
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="col-lg-6 col-md-12 colsm-12">
+                  <div style={{ marginTop: '15%' }} >
+                    <img src="https://borgenproject.org/wp-content/uploads/Girls_Education-530x354.jpg" alt="Image" />
+                  </div>
+                </div>
+
+
+                <div className="col-lg-6 col-md-12 colsm-12"><div className="wpo-about-img-3"><img src="/static/media/about3.9af31693.png" alt="" />
+                </div></div></div></div></div>
+
+
+
+
+          <div className="wpo-about-area section-padding">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-6 col-md-12 colsm-12">
+                  <div className="wpo-about-text">
+                    <div className="wpo-section-title">
+                      <span>Accelerating Our Impact</span>
+                      <h2></h2>
+                    </div>
+
+                    <p>
+                      We recognize that the work we do is important for both the Nigerian girl and the society, and we believe
+  that with the support of individuals and organizations looking to make a positive contribution to society,
+  we can make the most impact and transform society through our work,
+                    </p>
+
                     <div className="btns">
                       <Link to="/campaign/list" className="theme-btn">Donate Now</Link>
                       <ul>
@@ -195,6 +349,10 @@ class App extends Component {
 
                 <div className="col-lg-6 col-md-12 colsm-12"><div className="wpo-about-img-3"><img src="/static/media/about3.9af31693.png" alt="" />
                 </div></div></div></div></div>
+
+
+
+
 
           <div className="wpo-case-area section-padding"><div className="container">
             <div className="row">

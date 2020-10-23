@@ -11,87 +11,65 @@ function App() {
 
             <Navigation />
 
-            <div className="wpo-breadcumb-area" style={{background: 'url(http://nasarna-react.wpocean.com/static/media/img-1.f69696e6.jpg)' }} >
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
-                            <div className="wpo-breadcumb-wrap">
-                                <h2>About Us</h2>
-                                {/* <ul>
-                                    <li><a href="/home">Home</a></li>
-                                    <li><span>About</span></li>
-                                </ul> */}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
             <div className="wpo-mission-area section-padding">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
                             <div className="wpo-section-title">
-                                <span>Skilllink - Promoting Female Empowerment in Africa</span>
-                                <h2>Help The Helpless</h2>
+                                <span></span>
+                                <h2>How We Work</h2>
                             </div>
                         </div>
                         <div className="col-12">
                             <p>
-                            Skilllink is a platform that promotes female empowerment by connecting girls from secondary schools
-across Lagos state to opportunities that equip them with profitable vocational skills and technical
-knowledge, giving them the power to transform their lives.
-Girls from disadvantaged backgrounds are often faced wth big challenges that may pose a real threat to
-their dreams of a better future. When there are no available means of support, the girl child is forced to
-live below her potential. Depreived of life basic needs, these girls are left to struggle for survival which
-may lead to a halt in their academic pursuits, child marriage, and the involuntary engagement in societal
-vices for survival. Our goal is to empower the less privileged Lagos schoolgirl to take control of her future.
-We implement this goal through our program for girls.
-In partnership with individuals and corporate bodies, we invest in the vocational training of girls from low
-income households, setting in motion a sustainable plan to secure our well-being as a society. This
-training, which will equip girls to take on opportunities in traditionally made-dominated industries will serve
-as an attempt to narrow the gender pay gap.
+                                We work with secondary school girls across Lagos State with strong academic, demonstrated Leadership
+    traits, high sense of responsibility, or those who may be at a high risk of dropping out of secondary
+    school.
+    To ensure we provide a holistic learning experience to the participants of the skilllink program, our training
+    program will cover three major focus areas:
+    <li>Vocational training</li> 
+    <li>Busiess management, customer service, and social etiquette</li>
+    <li>Mentorship and community engagement.</li>
+    We believe that when equipped with these skills, the girls are able to contribute to the society which will
+    reward them for their contribution, setting them on a path to financial independence. This makes it
+    possible for girls from poor backgrounds to attain university education
                             </p>
                         </div>
                     </div>
-                
+
                 </div>
             </div>
             <div className="wpo-about-area section-padding">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-6 col-md-12 colsm-12">
+                        <div className="col-lg-8 col-md-12 colsm-12">
                             <div className="wpo-about-text">
                                 <div className="wpo-section-title">
                                     {/* <span>What We Do?</span> */}
-                                    <h2>How We Define Success</h2>
+                                    <h2>Our Process:</h2>
                                 </div>
-                                <p>The overall goal of the Skill Link platform and programs is to empower the less privileged Lagos schoolgirl to take control of her future. We have itemized below what success will look like for participants on the Skill Link platform:
-                                <li>High completion rate of Skill Link programs by trainees, not less than 80%.</li>
-                                <li>High completion rate of secondary school education by trainees, not less than 80%.</li>
-                                <li>Increased rate of higher education enrollment among trainees.</li>
-                                <li>Increased employability of trainees.</li>
-                                <li>Improved financial inclusion and literacy among trainees.</li>
-                                <li>Increased brand awareness and goodwill for sponsors.</li>  </p>
-                                
+                                <p>Our selection model has been designed to achieve a high completion rate on the part of our trainees as
+well as an overall high success rate.
+                                <li><strong>Step 1</strong>: We identify promising girls from various locations across Lagos state and map them to clusters.
+    To achieve this, we conduct an assessment to select from the pool girls who meet our prequalification
+criteria. Once a cluster (group of 10 girls) is filled, we map it to a specific potential vocational option.</li>
+                                    <li><strong>Step 2</strong>: Through in-person and virtual engagements, we prepare the girls by providing preliminary
+    orientation for the skilllink program, It is during this stage that the trainees are introduced to the vocations
+available on the platform, and information is provided on how they can be accessed.</li>
+                                    <li><strong>Step 3</strong>: The trainees are onboarded on the Skilllink platform where they are matched with opportunities.
+    These opportunities are the vocation options available on the platforms and implemented in the facilities
+of our corporate and training partners.</li>
+                                    <li><strong>Step 4</strong>: We continue to engage the trainees through our fulfilment and monitoring track. We monitor their
+    progress and provide support where necessary. We implement this phase to ensure a high participant
+completion rate and overall success of the program.</li>  </p>
+
                             </div>
                         </div>
 
 
 
-
-                        <div className="col-lg-6 col-md-12 colsm-12">
-                            <div className="wpo-about-text">
-                                <div className="wpo-section-title">
-                                    <span></span>
-                                    <h2>Ultimately, Skilllink Will Lift Many Out of Poverty by Socializing the
-Effective Work Ethics and Skills Development in the Communities Where
-These Girls Live.</h2>
-                                </div>
-                                
-                                
-                            </div>
-                        </div>
                         <div className="col-lg-6 col-md-12 colsm-12">
                             <div className="wpo-about-img-3"><img src="/static/media/about3.9af31693.png" alt="" /></div>
                         </div>
@@ -103,19 +81,19 @@ These Girls Live.</h2>
 
 
             <div className="wpo-about-area section-padding">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-6 col-md-12 colsm-12">
-                  <div className="wpo-about-text">
-                    <div className="wpo-section-title">
-                      <span>Accelerating Our Impact</span>
-                      <h2></h2>
-                    </div>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6 col-md-12 colsm-12">
+                            <div className="wpo-about-text">
+                                <div className="wpo-section-title">
+                                    <span>Accelerating Our Impact</span>
+                                    <h2></h2>
+                                </div>
 
-                    <p>
-                    We recognize that the work we do is important for both the Nigerian girl and the society, and we believe
-that with the support of individuals and organizations looking to make a positive contribution to society,
-we can make the most impact and transform society through our work,
+                                <p>
+                                    We recognize that the work we do is important for both the Nigerian girl and the society, and we believe
+                that with the support of individuals and organizations looking to make a positive contribution to society,
+                we can make the most impact and transform society through our work,
                     </p>
 
                     <div className="btns">
@@ -133,21 +111,21 @@ we can make the most impact and transform society through our work,
                         {/* <li className="video-text">Watch Our Video</li> */}
                       </ul>
                     </div>
-                    
-                    
-                  </div>
-                </div>
-
-                <div className="col-lg-6 col-md-12 colsm-12">
-                  <div style={{ marginTop: '15%' }} >
-                    <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/11/holding_hands_in_support-1296x728-header-1296x728.jpg?w=1155&h=1528" alt="Image" />
-                  </div>
-                </div>
 
 
-                <div className="col-lg-6 col-md-12 colsm-12"><div className="wpo-about-img-3"><img src="/static/media/about3.9af31693.png" alt="" />
-                </div></div></div></div></div>
-            
+                            </div>
+                        </div>
+
+                        <div className="col-lg-6 col-md-12 colsm-12">
+                            <div style={{ marginTop: '15%' }} >
+                                <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/11/holding_hands_in_support-1296x728-header-1296x728.jpg?w=1155&h=1528" alt="Image" />
+                            </div>
+                        </div>
+
+
+                        <div className="col-lg-6 col-md-12 colsm-12"><div className="wpo-about-img-3"><img src="/static/media/about3.9af31693.png" alt="" />
+                        </div></div></div></div></div>
+
             {/* <div className="wpo-counter-area undefined">
                 <div className="container">
                     <div className="row">
