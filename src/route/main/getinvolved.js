@@ -13,24 +13,30 @@ function App() {
 
 
 
-            <div className="wpo-mission-area section-padding" style={{color: 'black'}}>
+            <div className="wpo-mission-area section-padding" style={{ color: 'black' }}>
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
                             <div className="wpo-section-title">
                                 <span></span>
-                                <h4>Skilllink Provides an Opportunity for
+                                <h4 style={{ color: 'black' }} >Skilllink Provides an Opportunity for
 Individual and Corporate Sponsors to
 Contribute to Human and Societal
 Development.</h4>
                             </div>
                         </div>
                         <div className="col-12">
-                            <h3>Skilllink projects are funded through the following sources:</h3>
-                            <p>
+                            <p style={{ color: 'black' }} >We are open to sponsorships from corporate organizations, as an opportunity to increase their
+Sustainability and CSR footprint.</p>
+                        </div>
+                        <div className="col-12">
+                            <h5 style={{color: 'black'}}>Skilllink projects are funded through the following sources:</h5>
+                            <br />
+                            <br />
 
-                                <li>
-                                    <p><strong style={{ fontSize: '20px' }}>Sponsorship   </strong>
+                            <div className="row">
+                                <div className="col-4">
+                                    <p style={{color: 'black'}} ><strong style={{ fontSize: '20px',color: 'black' }}>Sponsorship   </strong><br/>
                                         We are open to
                                 sponsorships from
                                 corporate
@@ -39,11 +45,13 @@ Development.</h4>
                                 organizations with
                                 opportunities to
                                 increase sustainability
-                                and CSR footprint.</p>
-                                </li>
-                                <li>
+                                and CSR footprint.
+                                </p>
+                                </div>
 
-                                    <p><strong style={{ fontSize: '20px' }}>Fundraising   </strong>
+
+                                <div className="col-4">
+                                    <p style={{color: 'black'}} ><strong style={{ fontSize: '20px' ,color: 'black'}}>Fundraising   </strong><br/>
                                         We organize fundraising activities, and
             run mostly on income generated from:
 <li>
@@ -61,23 +69,18 @@ Development.</h4>
                                             predicate offences to money
                                             laundering that target girls.`
 </li></p>
+                                </div>
 
 
-                                </li>
-
-
-                                <li>
-
-                                    <p><strong style={{ fontSize: '20px' }}>Donations   </strong>
+                                <div className="col-4">
+                                <p style={{color: 'black'}} ><strong style={{ fontSize: '20px',color: 'black' }}>Donations   </strong><br/>
                                         We are supported with
         donations from well-meaning
         individuals as part of their
         contributions to human
 development.</p>
-
-
-                                </li>
-                            </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -92,7 +95,7 @@ development.</p>
                                     {/* <span>What We Do?</span> */}
                                     <h2>Our Process:</h2>
                                 </div>
-                                <p>Skilllink Offers Businesses and Teams an Opportunity to Exercise Their
+                                <p style={{color: 'black'}}>Skilllink Offers Businesses and Teams an Opportunity to Exercise Their
 Corporate Social Responsibility.
 
 
@@ -111,7 +114,9 @@ a fast-growing reach.</li>
 
 
                         <div className="col-lg-6 col-md-12 colsm-12">
-                            <div className="wpo-about-img-3"><img src="/static/media/about3.9af31693.png" alt="" /></div>
+                            <div className="wpo-about-img-3">
+                            {/* <img src={require('./../../assets/majkl-velner-uf4PZk6p23c-unsplash.jpg')} alt="Image" className="img-responsive"  /> */}
+                            </div>
                         </div>
                     </div>
                 </div>

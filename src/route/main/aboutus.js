@@ -140,7 +140,7 @@ we can make the most impact and transform society through our work,
 
                 <div className="col-lg-6 col-md-12 colsm-12">
                   <div style={{ marginTop: '15%' }} >
-                    <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/11/holding_hands_in_support-1296x728-header-1296x728.jpg?w=1155&h=1528" alt="Image" />
+                    <img src={require('./../../assets/MKCoursin_Enugu-144.jpg')} alt="Image" />
                   </div>
                 </div>
 

@@ -52,8 +52,8 @@ class App extends Component {
                   <div className="row">
                     <div className="col col-lg-12 slide-caption">
                       <div className="slide-title">
-                        <h3>Committed to Building a Self-sufficient
-Future for the Nigerian Girl.</h3>
+                        <h2 style={{color: 'white'}} >Committed to Building a Self-sufficient
+Future for the Nigerian Girl.</h2>
                       </div>
                       <div className="slide-subtitle">
                         <p>Skilllink connects girls from secondary schools across
@@ -111,7 +111,7 @@ giving them the power to transform their lives. </p>
             <div className="container">
               <div className="row">
                 <div className="col-lg-6 col-md-12 colsm-12">
-                  <div className="wpo-about-text">
+                  <div className="wpo-about-text" style={{ marginTop: '25%' }} >
                     <h3 >Empowering Young Girls to Dream</h3>
                     <br/>
                     <h5>
@@ -125,6 +125,7 @@ dream, and to pursue her dreams.
 
                 <div className="col-lg-6 col-md-12 colsm-12">
                   <div style={{ marginTop: '15%' }} >
+                  <img src={require('./../../assets/MKCoursin_Enugu-144.jpg')} alt="Image" className="img-responsive"  />
                     {/* <img src="https://www.unicefusa.org/sites/default/files/styles/standard_layout_banner/public/field-images/story-banner/2018/Screen%20Shot%202018-10-09%20at%2012.19.42%20PM_0.png?itok=DjH3P8sA" alt="Image" /> */}
                   </div>
                 </div>
@@ -135,13 +136,13 @@ dream, and to pursue her dreams.
 
                 <div className="col-lg-6 col-md-12 colsm-12">
                   <div style={{ marginTop: '1%' }} >
-                    {/* <img src="https://connectingtalent.com.my/wp-content/uploads/2019/09/logo.png" alt="Image" /> */}
+                  <img src={require('./../../assets/majkl-velner-uf4PZk6p23c-unsplash.jpg')} alt="Image" className="img-responsive"  />
                   </div>
                 </div>
 
 
                 <div className="col-lg-6 col-md-12 colsm-12">
-                  <div className="wpo-about-text">
+                  <div className="wpo-about-text" style={{ marginTop: '25%' }} >
                     <h4></h4>
                     <h3 >Connecting Talent With Opportunity</h3>
                     <br/>
@@ -165,7 +166,7 @@ to transform their lives and make an impact.
 
 
                 <div className="col-lg-6 col-md-12 colsm-12">
-                  <div className="wpo-about-text">
+                  <div className="wpo-about-text" style={{ marginTop: '25%' }} >
                     <h3 >Driving Inclusion for a Better Society</h3>
                     <br/>
                     <h5>
@@ -179,7 +180,7 @@ industries, and narrowing the gender pay gap.
 
                 <div className="col-lg-6 col-md-12 colsm-12">
                   <div style={{ marginTop: '15%' }} >
-                    {/* <img src="https://s3.amazonaws.com/brt.org/DrivingINclusion.jpg" alt="Image" /> */}
+                  <img src={require('./../../assets/doug-linstedt-jEEYZsaxbH4-unsplash.jpg')} alt="Image" className="img-responsive"  />
                   </div>
                 </div>
 
@@ -211,10 +212,22 @@ industries, and narrowing the gender pay gap.
                       </div>
                       <div className="wpo-mission-content">
                         <h2>Discover</h2>
-                        <p>Promising young girls in
-the state are identified
-and mapped into
-groups for engagement</p>
+                        <p>We identify the girls in
+their various locations
+and map them to
+clusters; access them
+through our
+prequalification criteria
+and due diligence
+process. Once a cluster
+is filled, we map it to a
+specific potential
+vocational option on the
+Skilllink platform and
+prep them for the
+engagement program.
+A cluster is made up of
+10 girls.</p>
                       </div>
                     </div>
                   </div>
@@ -225,11 +238,17 @@ groups for engagement</p>
                       </div>
                       <div className="wpo-mission-content">
                         <h2>Engage</h2>
-                        <p>Commencement of a
-preparatory orientation
-process to get
-participants familiarized
-with the program.</p>
+                        <p>Through face-to-face
+and digital meetings, we
+engage the cluster of
+girls and raise
+awareness on
+vocational training. We
+emphasize the specific
+vocations available on
+the Skilllink platform
+and how they may
+access them.</p>
                       </div>
                     </div>
                   </div>
@@ -240,12 +259,35 @@ with the program.</p>
                       </div>
                       <div className="wpo-mission-content">
                         <h2>Link</h2>
-                        <p>Participants are onboarded
-into the skilllink program
+                        <p>The girls are onboarded
+unto the Skilllink platform
 and matched with
-opportunities to gain
-real-world skills and
-experiences.</p>
+opportunities.
+Opportunities on the
+platform include vocational
+trainings which:
+<br />
+- Take place in the
+facilities of our
+corporate partners
+and are
+implemented by
+their employees.
+<br />
+{/* - Are sponsored by
+our corporate
+partners and are
+implemented in the
+facilities of our
+training partners
+<br />
+- Are sponsored by
+individual donors
+and are
+implemented in the
+facilities of our
+training partners.*/}
+</p> 
                       </div>
                     </div>
                   </div>
@@ -256,10 +298,17 @@ experiences.</p>
                       </div>
                       <div className="wpo-mission-content">
                         <h2>Retain</h2>
-                        <p> Our unique fulfillment &
-monitoring track ensures a
-high participant completion
-rate and overall success.</p>
+                        <p> We have a fulfillment &
+monitoring track that ensures
+high completion rates and skill
+acquisition by Skilllink trainees.
+overall success.
+Through this track, we keep
+the girls engaged with the
+training program, monitor their
+skill development and
+intervene with the appropriate
+response where required.</p>
                       </div>
                     </div>
                   </div>
@@ -343,7 +392,7 @@ the Entire World. Through the Skilllink Program We Are</h2>
 
                 <div className="col-lg-6 col-md-12 colsm-12">
                   <div style={{ marginTop: '15%' }} >
-                    <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/11/holding_hands_in_support-1296x728-header-1296x728.jpg?w=1155&h=1528" alt="Image" />
+                    <img src={require('./../../assets/connecting_classrooms_nigeria_used_to_represent_esspin.jpg')} alt="Image" />
                   </div>
                 </div>
 

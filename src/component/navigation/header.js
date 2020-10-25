@@ -86,11 +86,11 @@ class App extends Component {
                                                 Our Work
                                         </Link>
                                         </li>
-                                        {/* <li>
+                                        <li>
                                             <Link to="/get/involved" className={this.props.location.pathname === "/get/involved" ? "active" : "inactive"} >
                                                 Get Involved
                                         </Link>
-                                        </li> */}
+                                        </li>
 
                                        
                                         <li>

@@ -44,6 +44,11 @@ function App() {
             <div className="wpo-about-area section-padding">
                 <div className="container">
                     <div className="row">
+                    <div className="col-lg-6 col-md-12 colsm-12">
+                            <div className="wpo-about-img-3">
+                            <img src={require('./../../assets/majkl-velner-uf4PZk6p23c-unsplash.jpg')} alt="Image" className="img-responsive"  />
+                            </div>
+                        </div>
                         <div className="col-lg-8 col-md-12 colsm-12">
                             <div className="wpo-about-text">
                                 <div className="wpo-section-title">
@@ -70,9 +75,7 @@ completion rate and overall success of the program.</li>  </p>
 
 
 
-                        <div className="col-lg-6 col-md-12 colsm-12">
-                            <div className="wpo-about-img-3"><img src="/static/media/about3.9af31693.png" alt="" /></div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
