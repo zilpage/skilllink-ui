@@ -18,7 +18,7 @@ function App() {
               <div className="wpo-section-title">
                 <span></span>
                 <h4>
-                  Skilllink Provides an Opportunity for Individual and Corporate
+                  SkillLink Provides an Opportunity for Individual and Corporate
                   Sponsors to Contribute to Human and Societal Development.
                 </h4>
               </div>
@@ -31,7 +31,7 @@ function App() {
             </div>
             <div className="col-12">
               <h5>
-                Skilllink projects are funded through the following sources:
+                SkillLink projects are funded through the following sources:
               </h5>
               <br />
               <br />
@@ -58,7 +58,7 @@ function App() {
                       discovery training for children aged 9 to 12.
                     </li>
                     <li>
-                      Keeping Girls Safe Events Events organized by Skill Link
+                      Keeping Girls Safe Events Events organized by SkillLink
                       and focused on helping institutions deal with risks
                       related to Human Trafficking and other predicate offences
                       to money laundering that target girls.`
@@ -88,12 +88,12 @@ function App() {
                 <div className="wpo-section-title">
                   {/* <span>What We Do?</span> */}
                   <h5>
-                    Skilllink Offers Businesses an Opportunity for a Strategic
+                    SkillLink Offers Businesses an Opportunity for a Strategic
                     Csr That Enhances Gender Equality
                   </h5>
                 </div>
                 <p>
-                  Skilllink Offers Businesses and Teams an Opportunity to
+                  SkillLink Offers Businesses and Teams an Opportunity to
                   Exercise Their Corporate Social Responsibility.
                   <li>
                     - Engage with society in ways that demonstrate positive
@@ -119,7 +119,8 @@ function App() {
             <div className="col-lg-6 col-md-12 colsm-12">
               <div className="wpo-about-img-3">
                 <img
-                  src={require("./../../assets/1566868616-23-afra-k-fashion-school.jpg")}
+                  src={require("./../../assets/schoolgirls.jpg")}
+                  style={{ borderRadius: "20px" }}
                   alt="Image"
                   className="img-responsive"
                 />
@@ -128,7 +129,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="wpo-about-area section-padding">
+      <div className="wpo-mission-area section-padding">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-12 colsm-12">
@@ -172,6 +173,7 @@ function App() {
                 <img
                   src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/11/holding_hands_in_support-1296x728-header-1296x728.jpg?w=1155&h=1528"
                   alt="Image"
+                  style={{ borderRadius: "15px" }}
                 />
               </div>
             </div>
@@ -283,7 +285,7 @@ function App() {
                     </div>
                 </div>
             </div> */}
-      <Footer />>
+      <Footer />
       <div className="col-lg-12">
         <div className="header-menu">
           <ul className="smothscroll">

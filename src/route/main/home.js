@@ -55,7 +55,7 @@ class App extends Component {
                       </div>
                       <div className="slide-subtitle">
                         <p>
-                          Skilllink connects girls from secondary schools across
+                          SkillLink connects girls from secondary schools across
                           Lagos state to opportunities that equip them with
                           profitable vocational skills and technical knowledge,
                           giving them the power to transform their lives.
@@ -170,6 +170,7 @@ class App extends Component {
                   <div style={{ marginTop: "15%" }}>
                     <img
                       src={require("./../../assets/MKCoursin_Enugu-144.jpg")}
+                      style={{ borderRadius: "20px" }}
                       alt="Image"
                       className="img-responsive"
                     />
@@ -185,6 +186,7 @@ class App extends Component {
                     <img
                       src={require("./../../assets/majkl-velner-uf4PZk6p23c-unsplash.jpg")}
                       alt="Image"
+                      style={{ borderRadius: "20px" }}
                       className="img-responsive"
                     />
                   </div>
@@ -222,6 +224,7 @@ class App extends Component {
                   <div style={{ marginTop: "15%" }}>
                     <img
                       src={require("./../../assets/doug-linstedt-jEEYZsaxbH4-unsplash.jpg")}
+                      style={{ borderRadius: "20px" }}
                       alt="Image"
                       className="img-responsive"
                     />
@@ -261,7 +264,7 @@ class App extends Component {
                           map them to clusters; access them through our
                           prequalification criteria and due diligence process.
                           Once a cluster is filled, we map it to a specific
-                          potential vocational option on the Skilllink platform
+                          potential vocational option on the SkillLink platform
                           and prep them for the engagement program. A cluster is
                           made up of 10 girls.
                         </p>
@@ -282,7 +285,7 @@ class App extends Component {
                           Through face-to-face and digital meetings, we engage
                           the cluster of girls and raise awareness on vocational
                           training. We emphasize the specific vocations
-                          available on the Skilllink platform and how they may
+                          available on the SkillLink platform and how they may
                           access them.
                         </p>
                       </div>
@@ -299,7 +302,7 @@ class App extends Component {
                       <div className="wpo-mission-content">
                         <h2>Link</h2>
                         <p>
-                          The girls are onboarded unto the Skilllink platform
+                          The girls are onboarded unto the SkillLink platform
                           and matched with opportunities. Opportunities on the
                           platform include vocational trainings which:
                           <br />
@@ -324,7 +327,7 @@ class App extends Component {
                           {" "}
                           We have a fulfillment & monitoring track that ensures
                           high completion rates and skill acquisition by
-                          Skilllink trainees. overall success. Through this
+                          SkillLink trainees. overall success. Through this
                           track, we keep the girls engaged with the training
                           program, monitor their skill development and intervene
                           with the appropriate response where required.
@@ -342,10 +345,10 @@ class App extends Component {
                 <div className="col-lg-6 col-md-12 colsm-12">
                   <div className="wpo-about-text">
                     <div className="wpo-section-title">
-                      <span>Why Skilllink?</span>
+                      <span>Why SkillLink?</span>
                       <h2>
                         Investing in Girls’ Education Transforms Communities,
-                        Countries, and the Entire World. Through the Skilllink
+                        Countries, and the Entire World. Through the SkillLink
                         Program We Are
                       </h2>
                     </div>
@@ -365,6 +368,7 @@ class App extends Component {
                   <div style={{ marginTop: "15%" }}>
                     <img
                       src="https://borgenproject.org/wp-content/uploads/Girls_Education-530x354.jpg"
+                      style={{ borderRadius: "20px" }}
                       alt="Image"
                     />
                   </div>
@@ -423,6 +427,7 @@ class App extends Component {
                   <div style={{ marginTop: "15%" }}>
                     <img
                       src={require("./../../assets/connecting_classrooms_nigeria_used_to_represent_esspin.jpg")}
+                      style={{ borderRadius: "20px" }}
                       alt="Image"
                     />
                   </div>

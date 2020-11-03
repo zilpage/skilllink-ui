@@ -145,7 +145,7 @@ function App({ history }) {
         <div className="container">
           <div className="row">
             <div className="col col-xs-12">
-              <p className="copyright">© 2020 Skilllink. All rights reserved</p>
+              <p className="copyright">© 2020 SkillLink. All rights reserved</p>
               <p>
                 For donations, sponsorships, and support, kindly contact us:
                 info@skilllink.org

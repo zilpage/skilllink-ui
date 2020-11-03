@@ -37,22 +37,22 @@ function App() {
               <div className="wpo-section-title">
                 {/* <span>Skilllink - Promoting Female Empowerment in Africa</span> */}
                 <h3>
-                  Skilllink - Promoting Gender Equality by Connecting Girls to
+                  SkillLink - Promoting Gender Equality by Connecting Girls to
                   Lifelong and Profitable Vocational Skills
                 </h3>
               </div>
             </div>
             <div className="col-12">
               <p>
-                Skilllink promotes gender equality by connecting girls, in Lagos
+                SkillLink promotes gender equality by connecting girls, in Lagos
                 State senior secondary schools, to opportunities that enable
                 them develop lifelong and profitable vocational skills.
-                Skilllink focuses on vocations which have been largely dominated
+                SkillLink focuses on vocations which have been largely dominated
                 by the male gender. Equipped with money-making skills and
                 trained to contribute to their communities, the girls progress
                 to gain financial independence and freedom from poverty. In this
                 way, our work contributes to narrowing gender income inequality.
-                Skilllink targets schoolgirls from low-income homes, where
+                SkillLink targets schoolgirls from low-income homes, where
                 funding for university education is most likely unavailable.
                 Typically, a significant portion of such girls drop out of
                 secondary school and many of those who finish end up stranded,
@@ -61,7 +61,7 @@ function App() {
                 trafficking, baby factories and other vices. This should no
                 longer be happening! Rather, girls should be prepared; so, they
                 can rely on their vocational skills to become economically
-                active in the society. Skilllink partners with various actors to
+                active in the society. SkillLink partners with various actors to
                 provide opportunities to empower girls in this way. By investing
                 in the vocational training of the girls, we set in motion a
                 sustainable plan to secure our wellbeing as a society. As the
@@ -73,6 +73,54 @@ function App() {
         </div>
       </div>
       <div className="wpo-about-area section-padding">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 col-md-12 colsm-12">
+              <div className="wpo-about-text" style={{ color: "black" }}>
+                <div className="wpo-section-title">
+                  {/* <span>What We Do?</span> */}
+                  <img
+                    src={require("./../../assets/dawn.jpeg")}
+                    style={{ borderRadius: "25px" }}
+                    alt="Image"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-6 col-md-12 colsm-12">
+              <div className="wpo-about-text">
+                <div className="wpo-section-title">
+                  <h3>Who We Are</h3>
+                </div>
+                <p>
+                  Dawn Chinagorom-Abiakalam is a 17-year old high school
+                  graduate. In June 2020, she received her International
+                  Baccalaureate (IB) Diploma from SOS-Hermann Gmeiner
+                  International College, Tema. Dawn's passion for gender
+                  equality and social development led her to found SkillLink in
+                  2020. She is deeply concerned that formidable odds are stacked
+                  against Nigerian schoolgirls from low income families. As a
+                  passionate change agent, Dawn drives SkillLink as a means to
+                  empowering the schoolgirl and producing positive change in our
+                  society. Dawn plans to study Developmental Economics later in
+                  the university. In her words, this "will equip me with the
+                  knowledge and skills required to continue driving significant
+                  impact projects to improve the quality of life of the average
+                  Nigerian.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-12 colsm-12">
+              <div className="wpo-about-img-3">
+                <img src="/static/media/about3.9af31693.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="wpo-mission-area section-padding">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-12 colsm-12">
@@ -108,6 +156,7 @@ function App() {
               style={{
                 backgroundImage: `url(${bglogo})`,
                 opacity: 0.6,
+                borderRadius: "10px",
               }}
             >
               <div className="wpo-about-text">
@@ -121,7 +170,7 @@ function App() {
                       textAlign: "center",
                     }}
                   >
-                    Ultimately, Skilllink Will Lift Many Out of Poverty by
+                    Ultimately, SkillLink Will Lift Many Out of Poverty by
                     Socializing the Effective Work Ethics and Skills Development
                     in the Communities Where These Girls Live.
                   </p>
@@ -190,6 +239,7 @@ function App() {
               <div style={{ marginTop: "15%" }}>
                 <img
                   src={require("./../../assets/MKCoursin_Enugu-144.jpg")}
+                  style={{ borderRadius: "25px" }}
                   alt="Image"
                 />
               </div>
