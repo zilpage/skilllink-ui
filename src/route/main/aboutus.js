@@ -107,7 +107,7 @@ function App() {
                   the university. In her words, this "will equip me with the
                   knowledge and skills required to continue driving significant
                   impact projects to improve the quality of life of the average
-                  Nigerian.
+                  Nigerian."
                 </p>
               </div>
             </div>

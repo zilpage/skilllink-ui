@@ -89,7 +89,7 @@ function App() {
                   {/* <span>What We Do?</span> */}
                   <h5>
                     SkillLink Offers Businesses an Opportunity for a Strategic
-                    Csr That Enhances Gender Equality
+                    CSR That Enhances Gender Equality
                   </h5>
                 </div>
                 <p>

@@ -356,7 +356,7 @@ class App extends Component {
                       Increasing the chances of girls completing secondary
                       school. Providing an opportunity for young girls to
                       advance their education and fulfill their dreams
-                      Empowering girls to be entrepreneurial and self-sufficient
+                      Empowering girls to be entrepreneurial and Self-Sufficient
                       through the acquisition of profitable skills Creating a
                       support structure to give hope to girls who may not be
                       able to further their education
