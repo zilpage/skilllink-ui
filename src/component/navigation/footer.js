@@ -46,14 +46,24 @@ function App({ history }) {
                       </a>
                     </li>
                     <li>
-                      <a href="/">
+                      <Link
+                        to={{
+                          pathname: "https://twitter.com/skilllinkng/",
+                        }}
+                        target="_blank"
+                      >
                         <i className="ti-twitter-alt" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/">
+                      <Link
+                        to={{
+                          pathname: "https://www.instagram.com/skilllinkng/",
+                        }}
+                        target="_blank"
+                      >
                         <i className="ti-instagram" />
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 }
