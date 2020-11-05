@@ -54,14 +54,21 @@ function App() {
                     We organize fundraising activities, and run mostly on income
                     generated from:
                     <li>
-                      The Jade Preteens Boot Camp a two-week intensive personal
-                      discovery training for children aged 9 to 12.
+                      <b>The Jade Preteens Boot Camp</b>
+                      <p>
+                        A two-week intensive personal discovery training for
+                        children aged 9 to 12.
+                      </p>
                     </li>
                     <li>
-                      Keeping Girls Safe Events Events organized by SkillLink
-                      and focused on helping institutions deal with risks
-                      related to Human Trafficking and other predicate offences
-                      to money laundering that target girls.`
+                      <b>Keeping Girls Safe Events</b>
+                      <p>
+                        {" "}
+                        Events organized by SkillLink and focused on helping
+                        institutions deal with risks related to Human
+                        Trafficking and other predicate offences to money
+                        laundering that target girls.
+                      </p>
                     </li>
                   </p>
                 </div>
