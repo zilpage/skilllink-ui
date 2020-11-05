@@ -106,7 +106,7 @@ function App() {
                 <div className="row">
                   <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                     <div className="info-item">
-                      <h2>Cadogan Estate,Lagos State</h2>
+                      <h2>Cadogan Estate, Lagos State</h2>
                       <div className="info-wrap">
                         <div className="info-icon">
                           <i className="ti-world" />

@@ -134,8 +134,7 @@ function App({ history }) {
                   <ul>
                     <li>
                       <i className="fi flaticon-pin" />
-                      30 Bromley Cadogan estate, Jakande, Lekki-Lagos
-                      State-Nigeria{" "}
+                      Cadogan Estate, Lagos State{" "}
                     </li>
                     <li>
                       <i className="fi flaticon-call" /> 234-703 9378 492
