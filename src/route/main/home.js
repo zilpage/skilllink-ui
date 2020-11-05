@@ -49,7 +49,7 @@ class App extends Component {
                     <div className="col col-lg-6 slide-caption">
                       <div className="slide-title">
                         <h2>
-                          Committed to Building a Self-sufficient Future for the{" "}
+                          Committed to Building a Self-Sufficient Future for the{" "}
                           <span>Nigerian Girl.</span>
                         </h2>
                       </div>
