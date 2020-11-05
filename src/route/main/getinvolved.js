@@ -63,7 +63,6 @@ function App() {
                     <li>
                       <b>Keeping Girls Safe Events</b>
                       <p>
-                        {" "}
                         Events organized by SkillLink and focused on helping
                         institutions deal with risks related to Human
                         Trafficking and other predicate offences to money
