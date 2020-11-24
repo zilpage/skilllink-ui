@@ -228,7 +228,9 @@ function App() {
                 </p>
 
                 <div className="btns">
-                  <Link to="/campaign/list" className="theme-btn">
+                <Link to={{
+                  pathname: "https://flutterwave.com/pay/skilllinknigeriaow95?_ga=2.33077626.533821493.1605638471-2000442627.1605638471",
+                }}  target="_blank"  className="theme-btn">
                     Donate Now
                   </Link>
                   <ul>
