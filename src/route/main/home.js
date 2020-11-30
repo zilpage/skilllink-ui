@@ -6,6 +6,9 @@ import Footer from "./../../component/navigation/footer";
 import AppService from "./../../service/app_service";
 import UrlService from "./../../service/url_service";
 import hero1 from "../../assets/shape.jpg";
+import { SRLWrapper } from "simple-react-lightbox";
+
+
 
 class App extends Component {
   constructor(props) {
@@ -34,8 +37,22 @@ class App extends Component {
     });
   };
 
+  
+
   render() {
+
+    let images = [
+      {
+          url:"https://theanam.github.io/react-awesome-lightbox/img/2.jpg",
+          title:"image title 1"
+      },
+      {
+          url:"https://theanam.github.io/react-awesome-lightbox/img/1.jpg",
+          title:"image title 2"
+      }
+  ]
     const { result } = this.state;
+    
     return (
       <div className="App" id="scrool">
         <div className="App">
@@ -337,6 +354,25 @@ class App extends Component {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div
+            className="wpo-about-area section-padding">
+            <div className="container">
+              <div className="wpo-section-title">
+              <h2>Gallery</h2></div>
+              <div className="MyComponent">
+              <SRLWrapper>
+        {/*  <img src={require("./../../assets/images/1.jpg")} alt="Umbrella"/> */}
+         <img src={require("./../../assets/images/1.jpg")} style={{ width: "350px" , height : "300px" }} />
+         <img src={require("./../../assets/images/2.jpg")} style={{ width: "350px" , height : "300px"}} />
+         <img src={require("./../../assets/images/3.jpg")} style={{ width: "350px" , height : "300px" }} />
+         <img src={require("./../../assets/images/4.jpg")} style={{ width: "350px" , height : "300px" }} />
+         <img src={require("./../../assets/images/5.jpg")} style={{ width: "350px" , height : "300px"}} />
+         <img src={require("./../../assets/images/6.jpg")} style={{ width: "350px" , height : "300px"}} />
+        </SRLWrapper>
+      </div>
             </div>
           </div>
           <div className="wpo-about-area section-padding">

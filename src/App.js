@@ -14,11 +14,13 @@ import Dashboard from "./route/admin/dashboard";
 import Donation from "./route/main/donation";
 import "./App.css";
 import "./css/style.css";
+import SimpleReactLightbox from "simple-react-lightbox";
 
 function App() {
   return (
     <Router>
       <div className="App">
+      <SimpleReactLightbox>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={AboutUs} />
@@ -33,6 +35,7 @@ function App() {
           <Route path="/dashboard" exact component={Dashboard} />
           <Route path="/donate/:id" exact component={Donation} />
         </Switch>
+        </SimpleReactLightbox>
       </div>
     </Router>
   );
