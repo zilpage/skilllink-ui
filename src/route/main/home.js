@@ -375,7 +375,7 @@ class App extends Component {
       </div>
             </div>
           </div>
-          <div className="wpo-about-area section-padding">
+          <div className="wpo-mission-area undefined">
             <div className="container">
               <div className="row">
                 <div className="col-lg-6 col-md-12 colsm-12">
