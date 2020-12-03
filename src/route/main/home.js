@@ -7,6 +7,8 @@ import AppService from "./../../service/app_service";
 import UrlService from "./../../service/url_service";
 import hero1 from "../../assets/shape.jpg";
 import { SRLWrapper } from "simple-react-lightbox";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 
 
@@ -357,22 +359,29 @@ class App extends Component {
             </div>
           </div>
 
-          <div
-            className="wpo-about-area section-padding">
+          <div className="wpo-about-area section-padding"   >
             <div className="container">
               <div className="wpo-section-title">
               <h2>Gallery</h2></div>
-              <div className="MyComponent">
-              <SRLWrapper>
-        {/*  <img src={require("./../../assets/images/1.jpg")} alt="Umbrella"/> */}
-         <img src={require("./../../assets/images/1.jpg")} style={{ width: "350px" , height : "300px" }} />
-         <img src={require("./../../assets/images/2.jpg")} style={{ width: "350px" , height : "300px"}} />
-         <img src={require("./../../assets/images/3.jpg")} style={{ width: "350px" , height : "300px" }} />
-         <img src={require("./../../assets/images/4.jpg")} style={{ width: "350px" , height : "300px" }} />
-         <img src={require("./../../assets/images/5.jpg")} style={{ width: "350px" , height : "300px"}} />
-         <img src={require("./../../assets/images/6.jpg")} style={{ width: "350px" , height : "300px"}} />
-        </SRLWrapper>
-      </div>
+              <div>
+             <Carousel autoPlay dynamicHeight='false'>
+              <div style={{ height : "650px"}} >
+              <img src={require("./../../assets/images/2.jpg")} />
+              </div>
+              <div style={{ height : "650px"}}>
+              <img src={require("./../../assets/images/3.jpg")} />
+              </div>
+              <div style={{ height : "650px"}}>
+              <img src={require("./../../assets/images/4.jpg")} />
+              </div>
+              <div style={{ height : "650px"}}>
+              <img src={require("./../../assets/images/5.jpg")} />
+              </div>
+              <div style={{ height : "650px"}}>
+              <img src={require("./../../assets/images/1.jpg")} />
+              </div>
+             </Carousel>   
+             </div> 
             </div>
           </div>
           <div className="wpo-mission-area undefined">
