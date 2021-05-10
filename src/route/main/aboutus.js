@@ -94,20 +94,7 @@ function App() {
                   <h3>Who We Are</h3>
                 </div>
                 <p>
-                  Dawn Chinagorom-Abiakalam is a 17-year old high school
-                  graduate. In June 2020, she received her International
-                  Baccalaureate (IB) Diploma from SOS-Hermann Gmeiner
-                  International College, Tema. Dawn's passion for gender
-                  equality and social development led her to found SkillLink in
-                  2020. She is deeply concerned that formidable odds are stacked
-                  against Nigerian schoolgirls from low income families. As a
-                  passionate change agent, Dawn drives SkillLink as a means to
-                  empowering the schoolgirl and producing positive change in our
-                  society. Dawn plans to study Developmental Economics later in
-                  the university. In her words, this "will equip me with the
-                  knowledge and skills required to continue driving significant
-                  impact projects to improve the quality of life of the average
-                  Nigerian."
+                Dawn Chinagorom-Abiakalam is an undergraduate student studying economics at Clark University in Massachusetts. In June 2020, she received her International Baccalaureate (IB) Diploma from SOS-Hermann Gmeiner International College, Tema. Dawn's passion for gender equality and social development led her to found SkillLink in 2020. She is deeply concerned that formidable odds are stacked against Nigerian schoolgirls from low income families. As a passionate change agent, Dawn drives SkillLink as a means to empowering the schoolgirl and producing positive change in our society. In her words, this "will equip me with the knowledge and skills required to continue driving significant impact projects to improve the quality of life of the average Nigerian."
                 </p>
               </div>
             </div>
