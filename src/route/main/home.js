@@ -364,20 +364,20 @@ class App extends Component {
               <div className="wpo-section-title">
               <h2>Gallery</h2></div>
               <div>
-             <Carousel autoPlay >
-              <div >
+             <Carousel autoPlay dynamicHeight='false'>
+              <div  style={{ height : "650px"}}>
               <img src={require("./../../assets/images/2.jpg")} />
               </div>
-              <div >
+              <div  style={{ height : "650px"}}>
               <img src={require("./../../assets/images/3.jpg")} />
               </div>
-              <div >
+              <div  style={{ height : "650px"}}>
               <img src={require("./../../assets/images/4.jpg")} />
               </div>
-              <div >
+              <div  style={{ height : "650px"}}>
               <img src={require("./../../assets/images/5.jpg")} />
               </div>
-              <div >
+              <div  style={{ height : "650px"}}>
               <img src={require("./../../assets/images/1.jpg")} />
               </div>
              
